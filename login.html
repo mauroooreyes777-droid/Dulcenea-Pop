@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DULCENEA POP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <h1 class="page-title">Log in</h1>
+
+    <div class="login-container">
+        <h2>¡Bienvenido Crayola!</h2>
+        <form>
+            <input type="email" placeholder="Correo" required>
+            <div class="password-container">
+
+                <input 
+                    type="password"
+                    id="password"
+                    placeholder="Contraseña" 
+                    required
+                >
+                
+                <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+            </div>
+
+            <button type="submit">
+                Iniciar Sesión
+            </button>
+        </form>
+
+        <p class="register">
+            ¿Eres nuevo? <a href="#">Registrate</a>
+        </p>
+
+        <div class="divider">
+            <span>o continuar con</span>
+        </div>
+
+
+        <div class="social-login">
+
+            <button class="google-btn">
+                <i class="fa-brands fa-google"></i>
+            </button>
+
+            <button class="apple-btn">
+                <i class="fa-brands fa-apple"></i>
+            </button>
+            
+        </div>
+
+       <button class="guest-btn">
+            Entrar sin iniciar sesión
+       </button>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
