@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{
+.login-page{
     margin: 0;
     height: 100vh;
 
@@ -318,3 +318,208 @@ box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
     z-index:-1;            /*investigar tambien que es esto*/
 }
 
+.main-header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: center;
+    gap: 15px;
+
+    padding: 20px 40px;   /*investigar por que se miden asi los pixeles*/
+
+    z-index: 1000;
+}
+
+/*LOGO*/
+
+.logo{
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*Carrito*/
+
+.cart{
+
+    font-size:22px;
+
+    cursor:pointer;
+}
+
+/*BODY DE INDEX.HTML*/
+
+.home-page{
+    margin: 0;
+    padding-top: 80px;
+}
+
+.crayon-menu{
+
+    position: relative;
+
+    padding: 10px 25px;
+
+    background: #4da6ff;
+
+    color: white;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/*punta de la crayola*/
+
+.crayon-tip{
+
+    position: absolute;
+
+    left: -18px;
+    top: 0;
+
+    width: 0;
+    height: 0;
+
+    border-top: 18px solid transparent; /*preguntar como funciona esto*/
+    border-bottom: 18px solid transparent;
+    border-right: 18px solid #4da6ff;
+}
+
+.crayon-menu:hover{
+
+    background: #3a8fe0;
+
+}                               /*agregar lineas negras a la crayola*/
+
+.crayon-menu:hover .crayon-tip{
+
+    border-right-color: #3a8fe0;
+}
+
+.dropdown-menu{
+
+    position: absolute; /*investigar los tipos de position*/
+
+    top: 50px;
+
+    right: 0px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+    display: none;
+
+    flex-direction: column;
+
+}
+
+/*cuando el menu este activo*/
+
+.dropdown-menu.open{
+
+    display: flex;
+
+}
+
+.dropdown-menu a{
+
+    text-decoration: none;
+
+    color: black;
+
+    padding: 8px 0;
+
+    font-weight: 500;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+
+    padding-top: 140px;
+    padding-left: 100px;
+
+    display: block;
+}
+
+/* marca */
+
+.brand{
+    font-size: 80px;
+    font-weight: 800px;
+    letter-spacing: 2px;
+}
+/* Titulo */
+
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+/* texto */
+
+.hero-text{
+    text-align: left;
+}
+
+.hero-text p{
+    font-size: 20px;
+    line-height:1.5;
+}
+
+/*Palabra destacada*/
+
+.hero-text span{
+
+    color: #ff6fa5;
+    font-weight: bold;
+}
+
+/*boton*/
+
+.hero-btn{
+
+    display:inline-block; /*evita que se estire*/
+
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: linear-gradient(90deg,#1eaedb,#0f7cc0);
+
+    color: white;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+
+/*imagen*/
+
+.hero-crayons{
+    width: 250px;
+
+    display: block;
+
+    margin-top: 30px;
+}
