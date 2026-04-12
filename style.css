@@ -326,14 +326,9 @@ box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
 
     width: 100%;
 
-    display: flex;
-    justify-content: flex-end;
+    display: block;
 
-    align-items: center;
-    gap: 15px;
-
-    padding: 20px 40px;   /*investigar por que se miden asi los pixeles*/
-
+    padding: 0;   /*investigar por que se miden asi los pixeles*/
     z-index: 1000;
 }
 
@@ -355,16 +350,15 @@ box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
 
 .postit-fixed{
     position: fixed;
-    top: 240px; /*ajusta segun mi header*/
+    bottom: 30px;
     right: 30px;
 
-    width: 250px;
-    height: 250px;
+    width: 180px;
 
     background: #fff475;
-    padding: 20px;
-                                    
+    padding: 15px;                             
     border-radius: 10px;
+
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
 
     transform: rotate(-4deg);
@@ -471,9 +465,6 @@ header h1 {
 body {
     margin: 0;
     font-family: 'Comic Sans MS' , cursive;
-
-    background: url("IMGA/FONDOINDEX.jpeg") no-repeat center center fixed;
-    background-size: cover;
 }
 
 .banner {
@@ -678,7 +669,9 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    gap: 250px;
+    width: 100%;
 }
 
 .nav-links a {
@@ -687,14 +680,17 @@ body {
     background: white;
     color: #333;
 
-    padding: 8px 16px;
-    border-radius: 15px;
+    padding: 10px 22px;
+    border-radius: 25px;
 
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Poppins' , sans-serif;
+    
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
 
-    transition: all 0.3s ease;
+   display: inline-block;
 }
 
 .nav-links a:hover{
@@ -724,7 +720,12 @@ body {
 }
 
 .right {
+    width: 100px;
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
+
+    gap: 35px;
 }
 
 .center {
@@ -746,6 +747,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
