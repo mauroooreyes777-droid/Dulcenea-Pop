@@ -172,7 +172,7 @@ button:hover{
 .page-title{
     position: absolute;
 
-    top:50px;
+    top:10px;
     left:50%;
                                 
     transform: translateX(-50%);
@@ -184,7 +184,7 @@ button:hover{
     letter-spacing: 2px;
 }
 
-.divider{
+.divider-login{
     display: flex;
     align-items: center;
 
@@ -192,8 +192,8 @@ button:hover{
     width: 100%;
 }
 
-.divider::before,
-.divider::after{
+.divider-login::before,
+.divider-login::after{
 
     content: "";
     flex: 1;
@@ -202,7 +202,7 @@ button:hover{
     background: #888;
 }
 
-.divider span{
+.divider-login span{
     margin: 0 10px;
 
     font-size:15px;
@@ -337,14 +337,6 @@ box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
     z-index: 1000;
 }
 
-/*LOGO*/
-
-.logo{
-
-    font-size: 22px;
-    font-weight: bold;
-}
-
 /*Carrito*/
 
 .cart{
@@ -359,110 +351,6 @@ box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
 .home-page{
     margin: 0;
     padding-top: 80px;
-}
-
-.crayon-menu{
-
-    position: relative;
-
-    z-index: 2000;
-
-    padding: 10px 25px;
-
-    background: #4da6ff;
-
-    color: white;
-
-    font-weight: bold;
-
-    border-radius: 5px;
-
-    cursor: pointer;
-}
-
-/*punta de la crayola*/
-
-.crayon-tip{
-
-    position: absolute;
-
-    left: -18px;
-    top: 0;
-
-    width: 0;
-    height: 0;
-
-    border-top: 18px solid transparent; /*preguntar como funciona esto*/
-    border-bottom: 18px solid transparent;
-    border-right: 18px solid #4da6ff;
-}
-
-.crayon-menu:hover{
-
-    background: #3a8fe0;
-
-}                               /*agregar lineas negras a la crayola*/
-
-.crayon-menu:hover .crayon-tip{
-
-    border-right-color: #3a8fe0;
-}
-
-.dropdown-menu{
-
-    position: absolute; /*investigar los tipos de position*/
-
-    top: 50px;
-
-    right: 0px;
-
-    background: white;
-
-    border-radius: 10px;
-
-    padding: 15px;
-
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-
-    display: none;
-
-    flex-direction: column;
-
-}
-
-/*cuando el menu este activo*/
-
-.dropdown-menu.open{
-
-    display: flex;
-
-}
-
-.dropdown-menu a{
-
-    text-decoration: none;
-
-    color: black;
-
-    padding: 8px 0;
-
-    font-weight: 500;
-}
-
-.nav-menu{
-    display: flex;
-    align-items: center;
-}
-
-
-
-
-.hero-crayons{
-    width: 250px;
-
-    display: block;
-
-    margin-top: 30px;
 }
 
 .postit-fixed{
@@ -492,6 +380,7 @@ box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
 
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Comic Sans MS' , cursive;
 
     background-color: #fff;
@@ -507,9 +396,8 @@ body{
 }
 
 header {
-    background: linear-gradient(90deg,#ff9a9e,#fad0c4);
+    background: white;
     padding: 20px;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -787,3 +675,77 @@ body {
 .slider-box:nth-child(2) .card-cover { background: #fff475;}
 .slider-box:nth-child(3) .card-cover { background: #a0c4ff;}
 .slider-box:nth-child(4) .card-cover { background: #caffbf;}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    background: white;
+    color: #333;
+
+    padding: 8px 16px;
+    border-radius: 15px;
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover{
+    background: #ff8fab;
+    color: white;
+
+    transform: translateY(-3px) scale(1.05);
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+    padding: 15px 40px;
+}
+
+.left, .right {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+}
+
+.center img {
+    height: 50px;
+}
+
+.linea-rosa{
+    width: 100%;
+    height: 50px;
+
+    background: linear-gradient(90deg,#ff9a9e,#fad0c4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+}
+
