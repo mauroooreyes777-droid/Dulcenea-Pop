@@ -670,7 +670,11 @@ body {
 .nav-links {
     display: flex;
     justify-content: center;
+
     gap: 10px;
+
+    gap: 150px;
+
     width: 100%;
 }
 
@@ -870,4 +874,31 @@ body {
     100% {
         transform: translateX(-50%);
     }
+
+}
+
+/* 🔥 NAV LINKS en columna */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linea-rosa {
+    height: auto;
+    padding: 10px 0;
+}
+
+/* HEADER más compacto */
+.top-header {
+    padding: 10px 20px;
+}
+
+.center img {
+    height: 40px;
+}
+
+/* ICONOS más pequeños */
+.right i, .left i {
+    font-size: 1rem;
 }
