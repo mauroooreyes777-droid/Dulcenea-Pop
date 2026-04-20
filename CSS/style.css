@@ -472,7 +472,7 @@ header h1 {
 .seccion-colecciones{
     min-height: 100vh;
 
-    background: url("../IMGA/FONDOINDEX.jpeg") no-repeat center;
+    background: url("../IMGA/crayola-azul.jpeg") no-repeat center;
     background-size: cover;
 }
 
@@ -611,3 +611,37 @@ button:hover{
     background-color: var(--naranja);
 }
 
+.marca-banner {
+    height: 80vh;
+
+    background: url("../IMGA/fondo-nancy.jpeg") no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 40px;
+}
+
+.marca-overlay {
+    max-width: 400px;
+
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.marca-overlay h2 {
+    color: var(--rosa-fuerte);
+    margin-bottom: 15px;
+}
+
+.marca-overlay p {
+    color: var(--negro);
+    margin-bottom: 20px;
+}
