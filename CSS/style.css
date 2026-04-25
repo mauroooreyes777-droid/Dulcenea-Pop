@@ -159,7 +159,7 @@ header h1 {
     width: 100%;
     height: 100%;
 
-    background-image: url("../IMGA/PRIMER\ FONDO.jpeg");
+    background-image: url("../IMGA/PRIMER FONDO.jpeg");
     background-size: cover;
     background-position: center;
 
@@ -273,29 +273,28 @@ header h1 {
     padding: 60px 20px;
 }
 
-.titulo-seccion{
-    font-size: 2.5rem;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 60px;
-
+.nuestras {
+    font-style: italic;
+    color: var(--negro);
+    font-family: 'Pacifico' , cursive;
+    font-size: 2rem;
 }
 
-.titulo-seccion::after{
-    content: "";
-    position: absolute;
+.color-colecciones {
+    font-size: 2.5rem;
+    font-weight: bold;
 
-    left: 0;
-    bottom: 5px;
+    background: linear-gradient(
+        90deg,
+        var(--rosa-fuerte)
+        var(--naranja)
+        var(--amarillo)
+        var(--verde)
+        var(--azul)
+    );
 
-    width: 100%;
-    height: 12px;
-
-    background: #fff475;
-    z-index: -1;
-
-    border-radius: 5px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .divider {
@@ -472,7 +471,7 @@ header h1 {
 .seccion-colecciones{
     min-height: 100vh;
 
-    background: url("../IMGA/crayola-azul.jpeg") no-repeat center;
+    background: url("../IMGA/inicio-indexx.jpeg") no-repeat center;
     background-size: cover;
 }
 
@@ -612,9 +611,10 @@ button:hover{
 }
 
 .marca-banner {
+    position: relative;
     height: 80vh;
 
-    background: url("../IMGA/fondo-nancy.jpeg") no-repeat center;
+    background: url("../IMGA/fondo-marca.jpeg") no-repeat center;
     background-size: cover;
 
     display: flex;
@@ -624,8 +624,19 @@ button:hover{
     padding: 40px;
 }
 
+.marca-logo {
+    position: absolute;
+
+    left: 340px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 650px;
+}
+
 .marca-overlay {
-    max-width: 400px;
+    max-width: 500px;
 
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
@@ -645,3 +656,4 @@ button:hover{
     color: var(--negro);
     margin-bottom: 20px;
 }
+
