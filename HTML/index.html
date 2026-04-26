@@ -43,20 +43,45 @@
         <a href="#">Promociones</a>
         <a href="#">Contacto</a>
     </nav>
+
+</div>
+
+<div class="wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="gradienteOla" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ff7aa2"/>
+                <stop offset="50%" stop-color="#ffb86c"/>
+                <stop offset="100%" stop-color="#ffe066"/>
+            </linearGradient>
+        </defs>
+    
+        <path fill="url(#gradienteOla)"
+        d="M0,60 
+           C200,120 400,0 600,60 
+           C800,120 1000,0 1200,60 
+           C1300,80 1400,50 1440,40 
+           L1440,120 L0,120 Z">
+        </path>
+    </svg>
 </div>
 
 <!-- HERO / INICIO -->
 <section class="seccion-inicio">
     <img src="../IMGA/FONDO-DEF-INDEX.jpeg" class="fondo-img">
 
-    
+    <div class="contenido-inicio">
+        <button class="btn-productos">
+            Conoce todos nuestros productos
+        </button>
+    </div>
 </section>
 
 <!-- PRODUCTOS -->
 <section class="seccion-productos">
 
     <h2 class="titulo-slider">
-        <span>LO MÁS VENDIDO</span>
+        <span>LOS FAVORITOS</span>
     </h2>
 
     <div class="productos-slider">
@@ -66,52 +91,123 @@
             <div class="producto">
                 <img src="../IMG-CRAYOLAS/C-BTS.jpeg">
                 <p>CRAYOLAS BTS</p>
+                <P>$25,00 MXN</P>
             </div>
 
             <div class="producto">
                 <img src="../IMG-KITS/K-PINTURAS.jpeg">
                 <p>PINTURAS</p>
+                <P>$50,00 MXN</P>
             </div>
 
             <div class="producto">
                 <img src="../IMG-ALMOHADAS/A-STITCH.jpeg">
                 <p>LILO & STITCH</p>
+                <p>$75,00 MXN</p>
             </div>
 
             <div class="producto">
                 <img src="../IMG-CRAYOLAS/C-K-POP.jpeg">
                 <p>GUERRERAS K-POP</p>
+                <P>$25,00 MXN</P>
             </div>
 
             <div class="producto">
                 <img src="../IMG-TATUAJES/TATUAJE.jpeg">
-                <p>TATUAJES</p>
+                <p>PACK TATUAJES</p>
+                <p>$150,00 MXN</p>
             </div>
 
             <div class="producto">
                 <img src="../IMG-CRAYOLAS/C-PRINCESAS.jpeg">
                 <p>PRINCESAS</p>
+                <P>$25,00 MXN</P>
             </div>
 
             <div class="producto">
                 <img src="../IMG-ALMOHADAS/A-MELODY.jpeg">
                 <p>MELODY</p>
+                <p>$75,00 MXN</p>
             </div>
 
             <div class="producto">
                 <img src="../IMG-KITS/K-DINOSAURIOS.jpeg">
                 <p>DINOSAURIOS</p>
+                <p>$35,00 MXN</p>
             </div>
 
             <div class="producto">
                 <img src="../IMG-CRAYOLAS/C-F1.jpeg">
                 <p>F1</p>
+                <P>$25,00 MXN</P>
             </div>
 
             <div class="producto">
                 <img src="../IMG-ALMOHADAS/A-MOANA.jpeg">
                 <p>MOANA</p>
+                <p>$75,00 MXN</p>
             </div>
+            <!--DUPLICADOS-->
+            <div class="producto">
+                <img src="../IMG-CRAYOLAS/C-BTS.jpeg">
+                <p>CRAYOLAS BTS</p>
+                <P>$25,00 MXN</P>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-KITS/K-PINTURAS.jpeg">
+                <p>PINTURAS</p>
+                <P>$50,00 MXN</P>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-ALMOHADAS/A-STITCH.jpeg">
+                <p>LILO & STITCH</p>
+                <p>$75,00 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-CRAYOLAS/C-K-POP.jpeg">
+                <p>GUERRERAS K-POP</p>
+                <P>$25,00 MXN</P>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-TATUAJES/TATUAJE.jpeg">
+                <p>PACK TATUAJES</p>
+                <p>$150,00 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-CRAYOLAS/C-PRINCESAS.jpeg">
+                <p>PRINCESAS</p>
+                <P>$25,00 MXN</P>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-ALMOHADAS/A-MELODY.jpeg">
+                <p>MELODY</p>
+                <p>$75,00 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-KITS/K-DINOSAURIOS.jpeg">
+                <p>DINOSAURIOS</p>
+                <p>$35,00 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-CRAYOLAS/C-F1.jpeg">
+                <p>F1</p>
+                <P>$25,00 MXN</P>
+            </div>
+
+            <div class="producto">
+                <img src="../IMG-ALMOHADAS/A-MOANA.jpeg">
+                <p>MOANA</p>
+                <p>$75,00 MXN</p>
+            </div>
+
 
         </div>
     </div>
@@ -126,39 +222,47 @@
     <div class="slider-container">
 
         <div class="slider-box">
-            <div class="card-cover">
-                <h3>crayolas</h3>
-            </div>
+
             <img src="../IMGA/FONDODINDX.jpeg" class="slide active">
             <img src="../IMGA/FONDOINDEEXX.jpeg" class="slide">
             <img src="../IMGA/FONDOINDEX.jpeg" class="slide">
+
+            <div class="card-cover">
+                <img src="../IMGA/portada-crayolas.jpeg" class="cover-img">
+            </div>
         </div>
 
         <div class="slider-box">
-            <div class="card-cover">
-                <h3>tatuajes</h3>
-            </div>
-            <img src="../IMGA/FONDODINDX.jpeg" class="slide active">
+            
+            <img src="../IMGA/FONDODINDX.jpeg" class="slide">
             <img src="../IMGA/FONDOINDEEXX.jpeg" class="slide">
             <img src="../IMGA/FONDOINDEX.jpeg" class="slide">
+
+            <div class="card-cover">
+                <img src="../IMGA/portada-tatuajes.jpeg" class="cover-img">
+            </div>
         </div>
 
         <div class="slider-box">
-            <div class="card-cover">
-                <h3>kits</h3>
-            </div>
-            <img src="../IMGA/FONDODINDX.jpeg" class="slide active">
+        
+            <img src="../IMGA/FONDODINDX.jpeg" class="slide">
             <img src="../IMGA/FONDOINDEEXX.jpeg" class="slide">
             <img src="../IMGA/FONDOINDEX.jpeg" class="slide">
+
+            <div class="card-cover">
+                <img src="../IMGA/portada-peluches.jpeg" alt="cover-img">
+            </div>
         </div>
 
         <div class="slider-box">
-            <div class="card-cover">
-                <h3>almohadas</h3>
-            </div>
-            <img src="../IMGA/FONDODINDX.jpeg" class="slide active">
+        
+            <img src="../IMGA/FONDODINDX.jpeg" class="slide">
             <img src="../IMGA/FONDOINDEEXX.jpeg" class="slide">
             <img src="../IMGA/FONDOINDEX.jpeg" class="slide">
+
+            <div class="card-cover">
+                <img src="../IMGA/portada-kits.jpeg" alt="cover-img">
+            </div>
         </div>
 
     </div>

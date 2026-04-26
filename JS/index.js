@@ -14,38 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
           }
       });
   }
-
-  // POST-IT (esto ya no se rompe)
-  const contenido = [
-      {
-          title: "PROMOCIÓN",
-          text: "2x1 en plumones esta semana"
-      },
-      {
-          title: "MÁS VENDIDOS",
-          text: "Caja de crayolas + colores jumbo"
-      },
-      {
-          title: "COMBO ESCOLAR",
-          text: "Kids desde $89"
-      }
-  ];
-
-  let postitIndex = 0;
-
-  setInterval(() => {
-      postitIndex = (postitIndex + 1) % contenido.length;
-
-      const title = document.getElementById("postit-title");
-      const text = document.getElementById("postit-text");
-
-      if(title && text){
-          title.innerText = contenido[postitIndex].title;
-          text.innerText = contenido[postitIndex].text;
-      }
-
-  }, 3000);
-
 });
 
 document.querySelectorAll(".slider-box").forEach((slider) => {
