@@ -653,7 +653,7 @@ button:hover{
 }
 
 .seccion-sobre{
-    background: url("../IMGA/fondo-sobre.jpeg") no-repeat center 70%;
+    background: url("../IMGA/fondo-sobre2.jpeg") no-repeat center 70%;
     background-size: cover;
 
     height: 100vh;
@@ -662,7 +662,7 @@ button:hover{
     display: flex;
     align-items: center;
 
-    margin-top: -18px;
+    margin-top: -50px;
 }
 
 /*CONTENIDO ENCIMA*/
@@ -697,3 +697,80 @@ button:hover{
     color: #444;
 }
 
+.footer{
+    background: linear-gradient(180deg, var(--blanco), var(--rosa));
+    color: #333;
+
+    padding: 50px 20px 20px;
+    margin-top: 80px;
+}
+
+.footer-contenido{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-col{
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h3{
+    font-size: 1.6rem;
+    color: var(--blanco);
+    margin-bottom: 10px;
+}
+
+.footer-col h4{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--blanco);
+}
+
+.footer-col p{
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-col ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li{
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a{
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover{
+    color: var(--blanco);
+}
+
+.redes a{
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.redes a:hover{
+    color: var(--blanco);
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: var(--blanco);
+}
