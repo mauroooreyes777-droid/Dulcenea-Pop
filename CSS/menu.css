@@ -1,0 +1,57 @@
+:root {
+    --azul:#69DAE5;
+    --lila: #7EADFB;
+    --verde: #98EE86;
+    --rosa:#E97CE9;
+    --amarillo:#FBEB60;
+    --rosa-fuerte:#FF69B5;
+    --naranja:#FF8C6D;
+    --durazno:#FFAF51;
+
+    --blanco:#ffffff;
+    --negro:#333333;
+}
+
+.menu-section{
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.titulo-menu{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--rosa);
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu-card{
+    background: var(--blanco);
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.menu-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-card h3{
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.menu-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
