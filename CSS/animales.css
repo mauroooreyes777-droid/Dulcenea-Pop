@@ -33,7 +33,7 @@ body{
     column-gap: 15px;
 
     background: #f5f0e6;
-    border:3px solid var(--rosa);   /*f2c200*/
+    border:3px solid var(--durazno);   
     border-radius: 15px;
 
     padding: 20px;
@@ -69,7 +69,7 @@ body{
 }
 
 .producto-extra{
-    border-left: 3px solid rgb(83, 225, 250);
+    border-left: 3px solid rgb(22, 187, 58);
     padding-left: 15px;
     font-weight: bold;
     margin-top: 10px;

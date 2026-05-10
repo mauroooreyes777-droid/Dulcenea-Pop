@@ -54,7 +54,7 @@ body{
 
     background: #f5f0e6;
 
-    border: 3px solid var(--rosa);
+    border: 3px solid var(--azul);
     border-radius: 15px;
 
     align-items: center;
@@ -112,7 +112,7 @@ body{
 }
 
 .producto-extra{
-    border-left: 3px solid rgb(83, 225, 250);
+    border-left: 3px solid rgb(241, 7, 7);
     padding-left: 15px;
     font-weight: bold;
     margin-top: 10px;
@@ -164,4 +164,3 @@ body{
     background: #ff6fa5;
     color: white;
 }
-

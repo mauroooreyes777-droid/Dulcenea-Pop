@@ -2,21 +2,303 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>ANIMALES | crayolas</title>
+    <title>TV | crayolas</title>
     <link rel="stylesheet" href="../CSS/tv.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <section class="productos">
+
+    <div class="card-producto">
+
+        <div class="producto-horizontal">
+
+            <div class="producto-img">
+                <img src="../IMG-CRAYOLAS-TV/1-stitch.jpeg">
+            </div>
+    
+            <div class="producto-info">
+    
+                <h2>STITCH</h2>
+    
+                <p class="precio">$20</p>
+    
+                <div class="kits">
+                    <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                    <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                    <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                </div>
+    
+            </div>
+    
+            <div class="producto-extra">
+                <p class="titulo-extra">Mayoreo</p>
+                <p>+10 kits</p>
+    
+                <p class="titulo-extra">Menudeo</p>
+                <p>+$15 cada kit</p>
+    
+            </div>
+        </div>
+
+        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+    <div class="card-producto">
+
+        <div class="producto-horizontal">
+
+            <div class="producto-img">
+                <img src="../IMG-CRAYOLAS-TV/2-k-pop-hunters.jpeg">
+            </div>
+    
+            <div class="producto-info">
+    
+                <h2>Guerras<br>K-pop</h2>
+    
+                <p class="precio" id="precio-k-pop">$25</p>
+    
+                <div class="kits">
+                    <p>Selecciona tu kit:</p>
+        
+                    <select class="selector-kit" onchange="actualizarPrecio(this)">
+                        <option value="25">1 pieza - $25</option>
+                        <option value="35">2 piezas - $35</option>
+                        <option value="45">3 piezas - $45</option>
+                        <option value="55">4 piezas - $55</option>
+                        <option value="65">5 piezas - $65</option>
+                        <option value="75">6 piezas - $75</option>
+                        <option value="85">7 piezas - $85</option>
+                    </select>
+                </div>
+        
+            </div>
+        
+            <div class="producto-extra">
+                <p>Mayoreo</p>
+                <p>+10 kits</p>
+        
+                <p>Menudeo</p>
+                <p>+$15 cada kit</p>
+            </div>
+        
+        </div>
+
+        <!-- BOTÓN -->
+        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+    <div class="card-producto">
+
+        <div class="producto-horizontal">
+
+            <div class="producto-img">
+                <img src="../IMG-CRAYOLAS-TV/3-chicassuper.jpeg">
+            </div>
+    
+            <div class="producto-info">
+    
+                <h2>Chicas súper poderosas</h2>
+    
+                <p class="precio">$20</p>
+    
+                <div class="kits">
+                    <p class="opcion" data-precio="40">Kit de 6 piezas + dibujo<b>$40</b></p>
+                    <p class="opcion" data-precio="30">Kit de 4 piezas + dibujo<b>$30</b></p>
+                    <p class="opcion" data-precio="20">Kit de 2 piezas + dibujo<b>$20</b></p>
+                </div>
+    
+            </div>
+    
+            <div class="producto-extra">
+                <p class="titulo-extra">Mayoreo</p>
+                <p>+10 kits</p>
+    
+                <p class="titulo-extra">Menudeo</p>
+                <p>+$15 cada kit</p>
+    
+            </div>
+        </div>
+
+        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+    <div class="card-producto">
+        <div class="producto-horizontal">
+
+            <div class="producto-img">
+                <img src="../IMG-CRAYOLAS-TV/4chavo.jpeg">
+            </div>
+    
+            <div class="producto-info">
+    
+                <h2>Chavo del 8</h2>
+    
+                <p class="precio">$30</p>
+    
+                <div class="kits">
+                    <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                    <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                    <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                </div>
+    
+            </div>
+    
+            <div class="producto-extra">
+                <p class="titulo-extra">Mayoreo</p>
+                <p>+10 kits</p>
+    
+                <p class="titulo-extra">Menudeo</p>
+                <p>+$15 cada kit</p>
+    
+            </div>
+        </div>
+
+        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+    
+
+    <div class="card-producto">
+
+        <div class="producto-horizontal">
+
+            <div class="producto-img">
+                <img src="../IMG-CRAYOLAS-TV/5-princesas.jpeg">
+            </div>
+    
+            <div class="producto-info">
+    
+                <h2>Princesas</h2>
+    
+                <p class="precio">$25</p>
+    
+                <div class="kits">
+                    <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                    <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                    <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                    <p class="opcion" data-precio="25">Kit de 1 pieza grande + dibujo<b>$25</b></p>
+                </div>
+    
+            </div>
+    
+            <div class="producto-extra">
+                <p class="titulo-extra">Mayoreo</p>
+                <p>+10 kits</p>
+    
+                <p class="titulo-extra">Menudeo</p>
+                <p>+$15 cada kit</p>
+    
+            </div>
+        </div>
+
+        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+    <div class="card-producto">
+
+        <div class="producto-horizontal">
+
+            <div class="producto-img">
+                <img src="../IMG-CRAYOLAS-TV/6-mask.jpeg">
+            </div>
+    
+            <div class="producto-info">
+    
+                <h2>Pj Mask / Héroes en pijama</h2>
+    
+                <p class="precio">$30</p>
+    
+                <div class="kits">
+                    <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$65</b></p>
+                    <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$45</b></p>
+                    <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo<b>$30</b></p>
+                    <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+                </div>
+    
+            </div>
+    
+            <div class="producto-extra">
+                <p class="titulo-extra">Mayoreo</p>
+                <p>+10 kits</p>
+    
+                <p class="titulo-extra">Menudeo</p>
+                <p>+$15 cada kit</p>
+    
+            </div>
+        </div>
+
+        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+    <div class="card-producto">
+
+        <div class="producto-horizontal">
+
+            <div class="producto-img">
+                <img src="../IMG-CRAYOLAS-TV/7-silueta-mickey.jpeg">
+            </div>
+    
+            <div class="producto-info">
+    
+                <h2>Silueta Mickey Mouse</h2>
+    
+                <p class="precio">$20</p>
+    
+                <div class="kits">
+                    <p class="opcion" data-precio="45">Kit de 6 piezas + dibujo<b>$45</b></p>
+                    <p class="opcion" data-precio="35">Kit de 4 piezas + dibujo<b>$35</b></p>
+                    <p class="opcion" data-precio="25">Kit de 2 piezas + dibujo<b>$25</b></p>
+                    <p class="opcion" data-precio="20">Kit de 1 pieza grande + dibujo<b>$20</b></p>
+                </div>
+    
+            </div>
+    
+            <div class="producto-extra">
+                <p class="titulo-extra">Mayoreo</p>
+                <p>+10 kits</p>
+    
+                <p class="titulo-extra">Menudeo</p>
+                <p>+$15 cada kit</p>
+    
+            </div>
+        </div>
+
+        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+<div class="card-producto">
+
     <div class="producto-horizontal">
 
         <div class="producto-img">
-            <img src="../IMG-CRAYOLAS-TV/1-stitch.jpeg">
+            <img src="../IMG-CRAYOLAS-TV/8-cars.jpeg">
         </div>
 
         <div class="producto-info">
 
-            <h2>STITCH</h2>
+            <h2>CARS</h2>
 
             <p class="precio">$20</p>
 
@@ -24,11 +306,8 @@
                 <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
                 <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
                 <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
             </div>
-
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
-                Agregar al carrito
-            </button>
 
         </div>
 
@@ -42,51 +321,2345 @@
         </div>
     </div>
 
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
     <div class="producto-horizontal">
 
         <div class="producto-img">
-            <img src="../IMG-CRAYOLAS-TV/2-k-pop-hunters.jpeg">
+            <img src="../IMG-CRAYOLAS-TV/9-stitch-caras.jpeg">
         </div>
 
         <div class="producto-info">
 
-            <h2>Guerras<br>K-pop</h2>
+            <h2>STITCH</h2>
 
-            <p class="precio" id="precio-k-pop">$25</p>
+            <p class="precio">$25</p>
 
             <div class="kits">
-                <p>Selecciona tu kit:</p>
-    
-                <select class="selector-kit" onchange="actualizarPrecio(this)">
-                    <option value="25">1 pieza - $25</option>
-                    <option value="35">2 piezas - $35</option>
-                    <option value="45">3 piezas - $45</option>
-                    <option value="55">4 piezas - $55</option>
-                    <option value="65">5 piezas - $65</option>
-                    <option value="75">6 piezas - $75</option>
-                    <option value="85">7 piezas - $85</option>
-                </select>
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
             </div>
-    
-            <!-- BOTÓN -->
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
-                Agregar al carrito
-            </button>
-    
+
         </div>
-    
-        <!-- EXTRA -->
+
         <div class="producto-extra">
-            <p>Mayoreo</p>
+            <p class="titulo-extra">Mayoreo</p>
             <p>+10 kits</p>
-    
-            <p>Menudeo</p>
+
+            <p class="titulo-extra">Menudeo</p>
             <p>+$15 cada kit</p>
+
         </div>
-    
     </div>
 
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/10-caperuza.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Caperucita</h2>
+
+            <p class="precio">$25</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
     </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/11-minion.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Minion</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/12-frozen.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Frozen</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/13-winnie.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Frozen</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/14-stitch-completo.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>STITCH</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="55">Kit de 4 piezas + dibujo<b>$55</b></p>
+                <p class="opcion" data-precio="40">Kit de 2 piezas + dibujo<b>$40</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+ 
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/15-spiderman.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>SPIDERMAN</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/16-chavodel8.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Chavo del 8</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="55">Kit de 3 piezas + dibujo<b>$55</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 piezas + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div> 
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/17-marcianitos.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Marcianito Toy Story</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/18-hello-cuerpo.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Hello Kitty</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/18-hello-caritaa.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Hello Kitty</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="55">Kit de 6 piezas + dibujo<b>$55</b></p>
+                <p class="opcion" data-precio="35">Kit de 4 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 2 piezas + dibujo<b>$25</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/19-kuromi.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Kuromi</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/21-PRINCESA-SOFIA.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Princesa Sofia</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/22-castillo.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Princesa / Castillo</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/23-corona.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Corona Princesa</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/24-coco.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Coco</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/25-pikachu.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Pikachu</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/26-pokemon.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Pokemon</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/27-melody.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Melody</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/28-belyybeto.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Bely y Beto</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/29-PRINCESA-COLECCION.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Princesas Colección</h2>
+
+            <p class="precio">$300</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="300">Unicamente por colección <br> Incluye cajita y todo muy bonito para regalar<b>$300</b></p>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>   
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/30-garfield.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Garfield</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>  
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/31-snoopy.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Snoopy</h2>
+
+            <p class="precio">$25</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/32-pocoyo.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Pocoyo</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/33-spidey.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Spidey y sus amigos</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/34-monster-INC.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Monster Inc</h2>
+
+            <p class="precio">$25</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>    
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/35princesas-disney.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Princesas Disney</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/36-tinker.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Tinkerbell</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>   
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/37-mickey&minnie.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Mickey & Minnie Mouse</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>   
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/38-paw-patrol.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Paw Patrol</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/39-peppa.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Peppa Pig</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/40-winnie-amigos.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Winnie Pooh y sus amigos</h2>
+
+            <p class="precio">$25</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/41-bob-esponja.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Winnie Pooh y sus amigos</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/42-bluey.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Bluey</h2>
+
+            <p class="precio">$25</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/43-super-heroes.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Super héroes</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/44-dora.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Dora</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/45-plim-plum.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Plim Plim</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/46-intensamente.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Intesamente 1 y 2</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/47-pitufo.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Pitufo</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/48-simba.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Simba</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/49-toystory.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Toy Story</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>   
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/50-barbie.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Barbie / maquillaje</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>   
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/51-pokebolas.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Pokebolas</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/52-trolls.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Trolls</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/53-ben-10.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Ben 10</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$55</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/54-los-increibles.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Los increibles</h2>
+
+            <p class="precio">$25</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$55</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/55-transformers.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Transformers</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/55-transformers.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Transformers</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/56-miravel.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Mirabel / encanto</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/57-rey-leon.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Rey León</h2>
+
+            <p class="precio">$25</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="70">Kit de 6 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 4 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="35">Kit de 2 piezas + dibujo<b>$35</b></p>
+                <p class="opcion" data-precio="25">Kit de 1 pieza + dibujo<b>$25</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/58-bobpatri.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Bob Esponja</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/59-coco-melon.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>CocoMelón</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/60-moana.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Moana</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="90">Kit de 6 piezas + dibujo<b>$90</b></p>
+                <p class="opcion" data-precio="70">Kit de 4 piezas + dibujo<b>$70</b></p>
+                <p class="opcion" data-precio="50">Kit de 2 piezas + dibujo<b>$50</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/61-little-pony.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>My little pony</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/62-tortuga-ninja.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Tortuga Ninja</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+   
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/63-mini-peppa.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Mini Peppa Oig</h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="60">Kit de 6 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="40">Kit de 4 piezas + dibujo<b>$40</b></p>
+                <p class="opcion" data-precio="25">Kit de 2 piezas + dibujo<b>$25</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+    
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/64-sherk.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Shrek & Fiona</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/65-toystoryplano.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Toy Story plano <br> y más personajes</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/66-toystoryplano.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Toy Story plano <br> y más personajes</h2>
+
+            <p class="precio">$30</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="75">Kit de 6 piezas + dibujo<b>$75</b></p>
+                <p class="opcion" data-precio="60">Kit de 4 piezas + dibujo<b>$60</b></p>
+                <p class="opcion" data-precio="45">Kit de 2 piezas + dibujo acordé<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 1 pieza grande + dibujo<b>$30</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+
+</div>   
+
+<div class="card-producto">
+
+    <div class="producto-horizontal">
+
+        <div class="producto-img">
+            <img src="../IMG-CRAYOLAS-TV/67-bobsponja.jpeg">
+        </div>
+
+        <div class="producto-info">
+
+            <h2>Bob Esponja<h2>
+
+            <p class="precio">$20</p>
+
+            <div class="kits">
+                <p class="opcion" data-precio="65">Kit de 6 piezas + dibujo<b>$65</b></p>
+                <p class="opcion" data-precio="45">Kit de 4 piezas + dibujo<b>$45</b></p>
+                <p class="opcion" data-precio="30">Kit de 2 piezas + dibujo<b>$30</b></p>
+                <p class="opcion" data-precio="20">Kit de 1 pieza + dibujo<b>$20</b></p>
+            </div>
+
+        </div>
+
+        <div class="producto-extra">
+            <p class="titulo-extra">Mayoreo</p>
+            <p>+10 kits</p>
+
+            <p class="titulo-extra">Menudeo</p>
+            <p>+$15 cada kit</p>
+
+        </div>
+    </div>
+
+    <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+        Agregar al carrito
+    </button>
+    
+</div>
+
+
+
+    
+    
+    
+
+
+
+    
 </section>
 
 <script src="../JS/carrito.js"></script>

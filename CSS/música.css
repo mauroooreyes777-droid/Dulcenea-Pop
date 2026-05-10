@@ -29,13 +29,13 @@ body{
     padding: 20px;
 
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
 
     gap: 70px;
 
     box-sizing: border-box;
 
-   margin-left: 20px;
+   margin-left: 60px;
 }
 
 .producto-horizontal{
@@ -101,7 +101,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    gap: -22px;
+    gap: 2px;
 }
 
 .kits p{
