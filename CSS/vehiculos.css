@@ -164,3 +164,15 @@ body{
     background: #ff6fa5;
     color: white;
 }
+
+.opcion{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.opcion.active{
+    background: #ff4d6d;
+    color: var(--blanco);
+    border-radius: 10px;
+    padding: 5px;
+}

@@ -1,64 +1,31 @@
-function enviarWhatsApp(){
+// ==========================
+// CARRITO
+// ==========================
 
-    let mensaje = "Hola, quiero pedir:\n";
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-    carrito.forEach((item, index) => {
-        mensaje += `${index + 1}. ${item.nombre} - ${item.variante}\n`;
-    });
 
-     const url = `https://wa.me/521XXXXXXXXXX?text=${encodeURIComponent(mensaje)}`;
-     window.open(url, "_blank");
-}
+// ==========================
+// SELECCIONAR KITS
+// ==========================
 
-let carrito = [];
-
-function actualizarPrecio(select){
-    const precio = select.value;
-
-    const producto = select.closest(".producto-horizontal");
-    const precioElemento = producto.querySelector(".precio");
-
-    precioElemento.textContent = "$" + precio;
-}
-
-function agregarAlCarrito(boton){
-    const producto = boton.closest(".producto-horizontal");
-
-    const nombre = producto.querySelector("h2").textContent;
-
-    const select = producto.querySelector(".selector-kit");
-    const variante = select.options[select.selectedIndex].text;
-    const precio = select.value;
-
-    carrito.push({
-        nombre: nombre,
-        variante: variante,
-        precio: precio
-    });
-
-    console.log(carrito);
-    alert("Producto agregado al carrito");
-}
-
-let Carrito = [];
-
-// seleccionar opción
 document.querySelectorAll(".opcion").forEach(opcion => {
 
     opcion.addEventListener("click", function(){
 
-        const producto = this.closest(".producto-horizontal");
+        const kits = this.closest(".kits");
 
-        // quitar selección anterior
-        producto.querySelectorAll(".opcion").forEach(o => {
-            o.classList.remove("activa");
+        kits.querySelectorAll(".opcion").forEach(o => {
+            o.classList.remove("active");
         });
 
-        // activar la seleccionada
-        this.classList.add("activa");
+        this.classList.add("active");
 
         // cambiar precio visual
         const precio = this.dataset.precio;
+
+        const producto = this.closest(".producto-horizontal");
+
         const precioElemento = producto.querySelector(".precio");
 
         precioElemento.textContent = "$" + precio;
@@ -67,28 +34,77 @@ document.querySelectorAll(".opcion").forEach(opcion => {
 
 });
 
+
+// ==========================
+// AGREGAR AL CARRITO
+// ==========================
+
 function agregarAlCarrito(boton){
 
-    const producto = boton.closest(".producto-horizontal");
+    const producto = boton.closest(".card-producto");
 
     const nombre = producto.querySelector("h2").textContent;
 
-    const opcionSeleccionada = producto.querySelector(".opcion.activa");
+    const opcionSeleccionada = producto.querySelector(".opcion.active");
 
     if(!opcionSeleccionada){
+
         alert("Selecciona un kit primero");
+
         return;
     }
 
-    const variante = opcionSeleccionada.textContent;
-    const precio = opcionSeleccionada.dataset.precio;
+    const variante = opcionSeleccionada.textContent.trim();
 
-    carrito.push({
+    const precio = Number(opcionSeleccionada.dataset.precio);
+
+    const productoCarrito = {
+
+        id: nombre + "-" + precio,
+
         nombre: nombre,
+
         variante: variante,
-        precio: precio
+
+        precio: precio,
+
+        cantidad: 1
+    };
+
+    const existe = carrito.find(item => item.id === productoCarrito.id);
+
+    if(existe){
+
+        existe.cantidad++;
+
+    } else {
+
+        carrito.push(productoCarrito);
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    console.log(carrito);
+
+    alert("Producto agregado al carrito ✨");
+}
+
+
+// ==========================
+// ENVIAR A WHATSAPP
+// ==========================
+
+function enviarWhatsApp(){
+
+    let mensaje = "Hola, quiero pedir:%0A%0A";
+
+    carrito.forEach((item, index) => {
+
+        mensaje += `${index + 1}. ${item.nombre} - ${item.variante} - $${item.precio}%0A`;
+
     });
 
-    console.log(Carrito);
-    alert("Producto agregado");
+    const url = `https://wa.me/521XXXXXXXXXX?text=${mensaje}`;
+
+    window.open(url, "_blank");
 }
