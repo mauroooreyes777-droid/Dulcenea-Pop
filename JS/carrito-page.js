@@ -9,7 +9,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 // RENDERIZAR
 // ==========================
 
-function renderizarCarrito(){
+function renderizarCarrito() {
 
     listaCarrito.innerHTML = "";
 
@@ -21,42 +21,48 @@ function renderizarCarrito(){
 
         listaCarrito.innerHTML += `
 
-        <div class="producto-carrito">
+<div class="producto-carrito">
 
-            <div class="info">
+    <div class="img-producto">
 
-                <h3>${item.nombre}</h3>
+        <img src="${item.img}" alt="${item.nombre}">
 
-                <p>${item.variante}</p>
+    </div>
 
-                <p class="precio">$${item.precio}</p>
+    <div class="info">
 
-            </div>
+        <h3>${item.nombre}</h3>
 
-            <div class="cantidad">
+        <p>${item.variante}</p>
 
-                <button onclick="restarCantidad(${index})">
-                    -
-                </button>
+        <p class="precio">$${item.precio}</p>
 
-                <span>${item.cantidad}</span>
+    </div>
 
-                <button onclick="sumarCantidad(${index})">
-                    +
-                </button>
+    <div class="cantidad">
 
-            </div>
+        <button onclick="restarCantidad(${index})">
+            -
+        </button>
 
-            <button class="eliminar"
-            onclick="eliminarProducto(${index})">
+        <span>${item.cantidad}</span>
 
-                <i class="fa-solid fa-trash"></i>
+        <button onclick="sumarCantidad(${index})">
+            +
+        </button>
 
-            </button>
+    </div>
 
-        </div>
+    <button class="eliminar"
+    onclick="eliminarProducto(${index})">
 
-        `;
+        <i class="fa-solid fa-trash"></i>
+
+    </button>
+
+</div>
+
+`;
 
     });
 
@@ -68,7 +74,7 @@ function renderizarCarrito(){
 // SUMAR
 // ==========================
 
-function sumarCantidad(index){
+function sumarCantidad(index) {
 
     carrito[index].cantidad++;
 
@@ -80,11 +86,11 @@ function sumarCantidad(index){
 // RESTAR
 // ==========================
 
-function restarCantidad(index){
+function restarCantidad(index) {
 
     carrito[index].cantidad--;
 
-    if(carrito[index].cantidad <= 0){
+    if (carrito[index].cantidad <= 0) {
 
         carrito.splice(index, 1);
     }
@@ -97,7 +103,7 @@ function restarCantidad(index){
 // ELIMINAR
 // ==========================
 
-function eliminarProducto(index){
+function eliminarProducto(index) {
 
     carrito.splice(index, 1);
 
@@ -109,7 +115,7 @@ function eliminarProducto(index){
 // GUARDAR
 // ==========================
 
-function guardarCarrito(){
+function guardarCarrito() {
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
@@ -121,7 +127,7 @@ function guardarCarrito(){
 // WHATSAPP
 // ==========================
 
-function enviarWhatsApp(){
+function enviarWhatsApp() {
 
     let mensaje = "Hola, quiero pedir:%0A%0A";
 

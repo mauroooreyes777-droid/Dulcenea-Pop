@@ -11,7 +11,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 document.querySelectorAll(".opcion").forEach(opcion => {
 
-    opcion.addEventListener("click", function(){
+    opcion.addEventListener("click", function () {
 
         const kits = this.closest(".kits");
 
@@ -39,7 +39,9 @@ document.querySelectorAll(".opcion").forEach(opcion => {
 // AGREGAR AL CARRITO
 // ==========================
 
-function agregarAlCarrito(boton){
+function agregarAlCarrito(boton) {
+
+    console.log(boton.dataset.img);
 
     const producto = boton.closest(".card-producto");
 
@@ -47,7 +49,7 @@ function agregarAlCarrito(boton){
 
     const opcionSeleccionada = producto.querySelector(".opcion.active");
 
-    if(!opcionSeleccionada){
+    if (!opcionSeleccionada) {
 
         alert("Selecciona un kit primero");
 
@@ -68,12 +70,14 @@ function agregarAlCarrito(boton){
 
         precio: precio,
 
+        img: boton.dataset.img,
+
         cantidad: 1
     };
 
     const existe = carrito.find(item => item.id === productoCarrito.id);
 
-    if(existe){
+    if (existe) {
 
         existe.cantidad++;
 
@@ -94,7 +98,7 @@ function agregarAlCarrito(boton){
 // ENVIAR A WHATSAPP
 // ==========================
 
-function enviarWhatsApp(){
+function enviarWhatsApp() {
 
     let mensaje = "Hola, quiero pedir:%0A%0A";
 
