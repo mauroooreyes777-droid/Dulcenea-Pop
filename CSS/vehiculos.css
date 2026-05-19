@@ -1,26 +1,26 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 :root {
-    --azul:#69DAE5;
+    --azul: #69DAE5;
     --lila: #7EADFB;
     --verde: #98EE86;
-    --rosa:#E97CE9;
-    --amarillo:#FBEB60;
-    --rosa-fuerte:#FF69B5;
-    --naranja:#FF8C6D;
-    --durazno:#FFAF51;
+    --rosa: #E97CE9;
+    --amarillo: #FBEB60;
+    --rosa-fuerte: #FF69B5;
+    --naranja: #FF8C6D;
+    --durazno: #FFAF51;
 
-    --blanco:#ffffff;
-    --negro:#333333;
+    --blanco: #ffffff;
+    --negro: #333333;
 }
 
-body{
-    font-family: 'Poppins' , sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-.productos{
+.productos {
     width: 95%;
     max-width: 1400px;
 
@@ -29,24 +29,24 @@ body{
     padding: 20px;
 
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-    gap: 70px;
+    gap: 60px;
 
     box-sizing: border-box;
 
-   margin-left: 20px;
+    margin-left: -18px;
 }
 
-.producto-horizontal{
-    width: 100%;
+.producto-horizontal {
+    max-width: 720px;
     height: 290px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    grid-template-columns: 170px 334px 20px;
+    grid-template-columns: 260px 240px 100px;
 
     column-gap: 15px;
 
@@ -54,17 +54,17 @@ body{
 
     background: #f5f0e6;
 
-    border: 3px solid var(--azul);
+    border: 3px solid var(--rosa);
     border-radius: 15px;
 
     align-items: center;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-.producto-img img{
+.producto-img img {
     width: 260px;
     height: 170px;
 
@@ -72,54 +72,54 @@ body{
 
     border-radius: 15px;
 }
-.producto-info{
+
+.producto-info {
     display: flex;
     margin-left: -5px;
     flex-direction: column;
     justify-content: center;
-    
+
     padding: 8px;
     gap: 5px;
-    flex: 1;
 }
 
-.producto-info h2{
-    font-family: 'Poppins' , sans-serif;
+.producto-info h2 {
+    font-family: 'Poppins', sans-serif;
     margin-top: 10px;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.precio{
+.precio {
     color: #ff4d4d;
     margin-top: -5px;
     font-size: 1.4rem;
     font-weight: 900;
 }
 
-.kits{
+.kits {
     display: flex;
     flex-direction: column;
 
     gap: -22px;
 }
 
-.kits p{
+.kits p {
     margin: 0;
     line-height: 1.2;
     font-size: 0.95rem;
     white-space: nowrap;
 }
 
-.producto-extra{
-    border-left: 3px solid rgb(241, 7, 7);
+.producto-extra {
+    border-left: 3px solid rgb(83, 225, 220);
     padding-left: 15px;
     font-weight: bold;
     margin-top: 10px;
     margin-right: 50px;
 }
 
-.selector-kit{
+.selector-kit {
     width: 180px;
     padding: 6px;
 
@@ -129,13 +129,13 @@ body{
     font-size: 0.9rem;
 }
 
-.card-producto{
+.card-producto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.btn-carrito{
+.btn-carrito {
 
     margin-top: 15px;
 
@@ -153,24 +153,24 @@ body{
     cursor: pointer;
 }
 
-.opcion{
+.opcion {
     cursor: pointer;
     padding: 5px;
     border-radius: 8px;
     transition: 0.2s;
 }
 
-.opcion:hover{
+.opcion:hover {
     background: #ff6fa5;
     color: white;
 }
 
-.opcion{
+.opcion {
     cursor: pointer;
     transition: .3s;
 }
 
-.opcion.active{
+.opcion.active {
     background: #ff4d6d;
     color: var(--blanco);
     border-radius: 10px;
