@@ -129,15 +129,25 @@ function guardarCarrito() {
 
 function enviarWhatsApp() {
 
-    let mensaje = "Hola, quiero pedir:%0A%0A";
+    let mensaje = "Hola, \n\nQuiero realizar un pedido: \n\n";
+
+    let total = 0;
 
     carrito.forEach((item, index) => {
 
-        mensaje += `${index + 1}. ${item.nombre} - ${item.variante} - Cantidad: ${item.cantidad} - $${item.precio}%0A`;
+        mensaje += `${index + 1}. ${item.nombre}\n`;
+        mensaje += `${item.variante}\n`
+        mensaje += `Cantidad: ${item.cantidad}\n` 
+        mensaje += `Subtotal: $${item.precio * item.cantidad}\n\n`;
 
+        total += item.precio * item.cantidad;
     });
 
-    const url = `https://wa.me/521XXXXXXXXXX?text=${mensaje}`;
+    mensaje += `Total: $${total}`;
+
+    const numero = "5217223217694";
+
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
     window.open(url, "_blank");
 }

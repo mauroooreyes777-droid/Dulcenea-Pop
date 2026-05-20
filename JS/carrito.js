@@ -92,23 +92,3 @@ function agregarAlCarrito(boton) {
 
     alert("Producto agregado al carrito ✨");
 }
-
-
-// ==========================
-// ENVIAR A WHATSAPP
-// ==========================
-
-function enviarWhatsApp() {
-
-    let mensaje = "Hola, quiero pedir:%0A%0A";
-
-    carrito.forEach((item, index) => {
-
-        mensaje += `${index + 1}. ${item.nombre} - ${item.variante} - $${item.precio}%0A`;
-
-    });
-
-    const url = `https://wa.me/521XXXXXXXXXX?text=${mensaje}`;
-
-    window.open(url, "_blank");
-}
