@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>VIDEOJUEGOS| crayolas</title>
     <link rel="stylesheet" href="../CSS/videojuegos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
+
+    <div class="top-bar">
+
+        <a href="crayolas.html" class="btn-seguir">
+
+            ← Seguir comprando
+
+        </a>
+
+        <a href="../carrito.html" class="icono-carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">0</span>
+
+        </a>
+
+    </div>
+
     <section class="productos">
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-VJ/1-caritasonic.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Carita Sonic</h2>    
-        
+
+                    <h2>Carita Sonic</h2>
+
                     <p class="precio">$25</p>
 
                     <div class="kits">
@@ -33,35 +53,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="videojuegos001" data-nombre="Carita Sonic"
+                data-img="IMG-CRAYOLAS-VJ/1-caritasonic.jpeg" onclick="agregarAlCarrito(this)">
+
                 Agregar al carrito
+
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-VJ/2-Angrybirds.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Angry Birds</h2>    
-        
+
+                    <h2>Angry Birds</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -72,35 +95,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="videojuegos002" data-nombre="Angry Birds"
+                data-img="IMG-CRAYOLAS-VJ/2-Angrybirds.jpeg" onclick="agregarAlCarrito(this)">
+
                 Agregar al carrito
+
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-VJ/3-Plantsvszombis.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Plants vs Zombis</h2>    
-        
+
+                    <h2>Plants vs Zombis</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -111,35 +137,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="videojuegos003" data-nombre="Plants vs Zombis"
+                data-img="IMG-CRAYOLAS-VJ/3-Plantsvszombis.jpeg" onclick="agregarAlCarrito(this)">
+
                 Agregar al carrito
+
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-VJ/4-mario.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Mario Bross</h2>    
-        
+
+                    <h2>Mario Bross</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -150,35 +179,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="videojuegos004" data-nombre="Mario Bross"
+                data-img="IMG-CRAYOLAS-VJ/4-mario.jpeg" onclick="agregarAlCarrito(this)">
+
                 Agregar al carrito
+
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-VJ/5-videojuegos.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>VIDEOJUEGOS</h2>    
-        
+
+                    <h2>VIDEOJUEGOS</h2>
+
                     <p class="precio">$30</p>
 
                     <div class="kits">
@@ -189,35 +221,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="videojuegos005" data-nombre="videojuegos"
+                data-img="IMG-CRAYOLAS-VJ/5-videojuegos.jpeg" onclick="agregarAlCarrito(this)">
+
                 Agregar al carrito
+
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-VJ/6-sonic.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Sonic</h2>    
-        
+
+                    <h2>Sonic</h2>
+
                     <p class="precio">$30</p>
 
                     <div class="kits">
@@ -228,35 +263,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="videojuegos006" data-nombre="Sonic"
+                data-img="IMG-CRAYOLAS-VJ/6-sonic.jpeg" onclick="agregarAlCarrito(this)">
+
                 Agregar al carrito
+
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-VJ/7-minecraft.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Minecraft</h2>    
-        
+
+                    <h2>Minecraft</h2>
+
                     <p class="precio">$30</p>
 
                     <div class="kits">
@@ -267,23 +305,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="videojuegos007" data-nombre="Minecraft"
+                data-img="IMG-CRAYOLAS-VJ/7-minecraft.jpeg" onclick="agregarAlCarrito(this)">
+
                 Agregar al carrito
+
             </button>
-    
+
         </div>
-        
+
     </section>
     <script src="../JS/carrito.js"></script>
+    <div id="toast" class="toast">
+        Producto agregado ✨
+    </div>
 </body>

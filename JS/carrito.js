@@ -90,5 +90,36 @@ function agregarAlCarrito(boton) {
 
     console.log(carrito);
 
-    alert("Producto agregado al carrito ✨");
+    actualizarContador();
+
+    mostrarToast();
+}
+
+function actualizarContador() {
+
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    let totalProductos = 0;
+
+    carrito.forEach(producto => {
+
+        totalProductos += producto.cantidad;
+    });
+
+    document.getElementById("contador-carrito").textContent = totalProductos;
+}
+
+actualizarContador();
+
+function mostrarToast() {
+
+    const toast = document.getElementById("toast");
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    }, 2000);
 }

@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>SHOWS| crayolas</title>
     <link rel="stylesheet" href="../CSS/shows.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
+    <div class="top-bar">
+
+        <a href="crayolas.html" class="btn-seguir">
+
+            ← Seguir comprando
+
+        </a>
+
+        <a href="../carrito.html" class="icono-carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">0</span>
+
+        </a>
+
+    </div>
+
     <section class="productos">
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-SHOWS/1-starwars.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Star Wars</h2>    
-        
+
+                    <h2>Star Wars</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -33,38 +52,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
+
             <button class="btn-carrito" data-id="shows001" data-nombre="Star Wars"
                 data-img="IMG-CRAYOLAS-SHOWS/1-starwars.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-SHOWS/2-merlina.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Merlina</h2>    
-        
+
+                    <h2>Merlina</h2>
+
                     <p class="precio">$30</p>
 
                     <div class="kits">
@@ -75,38 +94,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
+
             <button class="btn-carrito" data-id="shows002" data-nombre="Merlina"
                 data-img="IMG-CRAYOLAS-SHOWS/2-merlina.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-SHOWS/3-harryP.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Harry Potter</h2>    
-        
+
+                    <h2>Harry Potter</h2>
+
                     <p class="precio">$25</p>
 
                     <div class="kits">
@@ -117,38 +136,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
+
             <button class="btn-carrito" data-id="shows003" data-nombre="Harry Potter"
-            data-img="IMG-CRAYOLAS-SHOWS/3-harryP.jpeg" onclick="agregarAlCarrito(this)">
+                data-img="IMG-CRAYOLAS-SHOWS/3-harryP.jpeg" onclick="agregarAlCarrito(this)">
 
-            Agregar al carrito
+                Agregar al carrito
 
-        </button>
-    
+            </button>
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-SHOWS/4-Hpotter.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Harry Potter</h2>    
-        
+
+                    <h2>Harry Potter</h2>
+
                     <p class="precio">$25</p>
 
                     <div class="kits">
@@ -159,38 +178,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
+
             <button class="btn-carrito" data-id="shows004" data-nombre="Harry Potter"
                 data-img="IMG-CRAYOLAS-SHOWS/4-Hpotter.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-SHOWS/5-AVENGERS.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Super Héroes</h2>    
-        
+
+                    <h2>Super Héroes</h2>
+
                     <p class="precio">$30</p>
 
                     <div class="kits">
@@ -201,26 +220,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
+
             <button class="btn-carrito" data-id="shows005" data-nombre="Super Héroes"
                 data-img="IMG-CRAYOLAS-SHOWS/5-AVENGERS.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
-        
+
     </section>
     <script src="../JS/carrito.js"></script>
+    <div id="toast" class="toast">
+        Producto agregado ✨
+    </div>
 </body>

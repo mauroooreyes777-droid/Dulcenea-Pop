@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>COMIDA | crayolas</title>
     <link rel="stylesheet" href="../CSS/comida.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
+
+    <div class="top-bar">
+
+        <a href="crayolas.html" class="btn-seguir">
+
+            ← Seguir comprando
+
+        </a>
+
+        <a href="../carrito.html" class="icono-carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contador-carrito">0</span>
+
+        </a>
+
+    </div>
+
     <section class="productos">
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-COMIDA/1-cocina.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Cocina</h2>    
-        
+
+                    <h2>Cocina</h2>
+
                     <p class="precio">$30</p>
 
                     <div class="kits">
@@ -33,42 +53,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button 
-                class="btn-carrito"
-                data-id="comida001" 
-                data-nombre="Cocina"
-                data-img="IMG-CRAYOLAS-COMIDA/1-cocina.jpeg"  
-                onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="comida001" data-nombre="Cocina"
+                data-img="IMG-CRAYOLAS-COMIDA/1-cocina.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-COMIDA/2-cupcakes.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Cupcakes</h2>    
-        
+
+                    <h2>Cupcakes</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -79,42 +95,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button 
-                class="btn-carrito" 
-                data-id="comida002" 
-                data-nombre="Cupcakes"
-                data-img="IMG-CRAYOLAS-COMIDA/2-cupcakes.jpeg"  
-                onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="comida002" data-nombre="Cupcakes"
+                data-img="IMG-CRAYOLAS-COMIDA/2-cupcakes.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-COMIDA/3-paletas.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Paletas</h2>    
-        
+
+                    <h2>Paletas</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -125,42 +137,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button 
-                class="btn-carrito" 
-                data-id="comida003" 
-                data-nombre="Paletas"
-                data-img="IMG-CRAYOLAS-COMIDA/3-paletas.jpeg"  
-                onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="comida003" data-nombre="Paletas"
+                data-img="IMG-CRAYOLAS-COMIDA/3-paletas.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-COMIDA/4-helados.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Helados</h2>    
-        
+
+                    <h2>Helados</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -171,42 +179,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button 
-                class="btn-carrito" 
-                data-id="comida004" 
-                data-nombre="Helados"
-                data-img="IMG-CRAYOLAS-COMIDA/4-helados.jpeg"  
-                onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="comida004" data-nombre="Helados"
+                data-img="IMG-CRAYOLAS-COMIDA/4-helados.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-COMIDA/5-frutas.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Frutas</h2>    
-        
+
+                    <h2>Frutas</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -217,42 +221,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-                               
-            <button 
-                class="btn-carrito" 
-                data-id="comida005" 
-                data-nombre="Frutas"
-                data-img="IMG-CRAYOLAS-COMIDA/5-frutas.jpeg"                 
-                onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="comida005" data-nombre="Frutas"
+                data-img="IMG-CRAYOLAS-COMIDA/5-frutas.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-COMIDA/6-frutas.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Frutas</h2>    
-        
+
+                    <h2>Frutas</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -263,42 +263,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button 
-                class="btn-carrito" 
-                data-id="comida006" 
-                data-nombre="Frutas"
-                data-img="IMG-CRAYOLAS-COMIDA/6-frutas.jpeg"                 
-                onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="comida006" data-nombre="Frutas"
+                data-img="IMG-CRAYOLAS-COMIDA/6-frutas.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
 
         <div class="card-producto">
 
             <div class="producto-horizontal">
-    
+
                 <div class="producto-img">
                     <img src="../IMG-CRAYOLAS-COMIDA/7-comidas.jpeg">
                 </div>
-        
+
                 <div class="producto-info">
-        
-                    <h2>Comidas</h2>    
-        
+
+                    <h2>Comidas</h2>
+
                     <p class="precio">$20</p>
 
                     <div class="kits">
@@ -309,29 +305,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
 
                 </div>
-        
+
                 <div class="producto-extra">
                     <p class="titulo-extra">Mayoreo</p>
                     <p>+10 kits</p>
-        
+
                     <p class="titulo-extra">Menudeo</p>
                     <p>+$15 cada kit</p>
-        
+
                 </div>
             </div>
-    
-            <button 
-                class="btn-carrito" 
-                data-id="comida007" 
-                data-nombre="Comidas"
-                data-img="IMG-CRAYOLAS-COMIDA/7-comidas.jpeg"                 
-                onclick="agregarAlCarrito(this)">
+
+            <button class="btn-carrito" data-id="comida007" data-nombre="Comidas"
+                data-img="IMG-CRAYOLAS-COMIDA/7-comidas.jpeg" onclick="agregarAlCarrito(this)">
 
                 Agregar al carrito
 
             </button>
-    
+
         </div>
     </section>
     <script src="../JS/carrito.js"></script>
+    <div id="toast" class="toast">
+        Producto agregado ✨
+    </div>
 </body>
