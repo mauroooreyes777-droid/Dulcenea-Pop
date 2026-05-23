@@ -48,7 +48,7 @@
 
         </div>
 
-        <button onclick="enviarWhatsApp()" class="btn-whatsapp">
+        <button class="btn-whatsapp" onclick="abrirModal()">
 
             Finalizar pedido
 
@@ -56,7 +56,78 @@
 
     </section>
 
+    <div class="modal" id="modalPedido">
 
+        <div class="modal-contenido">
+
+            <span class="cerrar-modal" onclick="cerrarModal()">
+
+                ✕
+
+            </span>
+
+            <h2>DATOS DE ENTREGA ✨</h2>
+
+            <div class="campo">
+
+                <label>Nombre</label>
+
+                <input type="text" id="nombre">
+
+            </div>
+
+            <div class="campo">
+
+                <label>Teléfono</label>
+
+                <input type="text" id="telefono">
+
+            </div>
+
+            <div class="campo">
+
+                <label>Dirección</label>
+
+                <input type="text" id="direccion">
+
+            </div>
+
+            <div class="campo">
+
+                <label>Referencias</label>
+
+                <textarea id="referencias"></textarea>
+
+            </div>
+
+            <div class="campo">
+
+                <label>Fecha de entrega</label>
+
+                <input type="date" id="fecha">
+
+            </div>
+
+            <div class="campo">
+
+                <label>Notas extras</label>
+
+                <textarea id="notas"></textarea>
+
+            </div>
+
+            <button class="btn-enviar-modal" onclick="enviarWhatsApp()">
+
+                Enviar pedido✨
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="toast" class="toast show"></div>
     <script src="JS/carrito-page.js"></script>
 
 </body>

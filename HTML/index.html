@@ -1,340 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Dulcinea Pop</title>
 
     <link rel="stylesheet" href="../CSS/style.css">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body class="home-page">
+    <!-- HEADER NUEVO -->
 
-<!-- HEADER -->
-<header class="main-header">
-    <div class="top-header">
+    <header class="header-dulcenea">
 
-        <div class="left">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <!-- TOP BAR -->
+
+        <div class="top-bar">
+
+            <p>🚚 Envíos a todo México</p>
+
+            <p>💖 Hechas con amor</p>
+
+            <p>📱 Pedidos por WhatsApp</p>
+
+            <img src="../IMGA/brochazo rosa.png" class="brocha brocha-izq">
+
+            <img src="../IMGA/brochazo celeste.png" class="brocha brocha-celeste">
+
+            <img src="../IMGA/brochazo amarilla.png" class="crayola-header">
+
         </div>
 
-        <div class="center">
-            <img src="../IMGA/imagen-marca2.jpeg" alt="Logo Dulcinea Pop">
+
+        <!-- HEADER PRINCIPAL -->
+
+        <div class="header-main">
+
+            <!-- MENU -->
+
+            <button class="btn-menu">
+
+                ☰ Menú
+
+            </button>
+
+
+            <!-- LOGO -->
+
+            <div class="logo-centro">
+
+                <img src="../IMGA/imagen-marca2.jpeg" alt="Dulcenea Pop">
+
+            </div>
+
+
+            <!-- ICONOS -->
+
+            <div class="header-icons">
+
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+
+                <a href="../carrito.html" class="icono-carrito">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span id="contador-carrito">0</span>
+
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="right">
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
 
-    </div>
-</header>
+        <!-- NAVBAR -->
 
-<!-- NAVBAR -->
-<div class="linea-rosa">
-    <nav class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="crear.html">CREAR</a>
-        <a href="menu.html" class="nav-btn">Menú</a>
-        <a href="promociones.html">Promociones</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+        <nav class="navbar-dulcenea">
 
-</div>
+            <a href="#" class="activo">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
 
-<div class="wave">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <defs>
-            <linearGradient id="gradienteOla" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#ff7aa2"/>
-                <stop offset="50%" stop-color="#ffb86c"/>
-                <stop offset="100%" stop-color="#ffe066"/>
-            </linearGradient>
-        </defs>
-    
-        <path fill="url(#gradienteOla)"
-        d="M0,60 
+            <a href="#">
+                <i class="fa-solid fa-store"></i>
+                Tienda
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gift"></i>
+                Kits
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-star"></i>
+                Colecciones
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                Nosotros
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-envelope"></i>
+                Contacto
+            </a>
+
+        </nav>
+
+    </header>
+
+    <div class="wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="gradienteOla" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ff7aa2" />
+                    <stop offset="50%" stop-color="#ffb86c" />
+                    <stop offset="100%" stop-color="#ffe066" />
+                </linearGradient>
+            </defs>
+
+            <path fill="url(#gradienteOla)" d="M0,60 
            C200,120 400,0 600,60 
            C800,120 1000,0 1200,60 
            C1300,80 1400,50 1440,40 
            L1440,120 L0,120 Z">
-        </path>
-    </svg>
-</div>
-
-<!-- HERO / INICIO -->
-<section class="seccion-inicio">
-    <img src="../IMGA/FONDO-DEF-INDEX.jpeg" class="fondo-img">
-
-    <div class="contenido-inicio">
-        <button class="btn-productos">
-            <a href="../HTML/menu.html">Conoce todos nuestros productos</a> 
-        </button>
-    </div>
-</section>
-
-<!-- PRODUCTOS -->
-<section class="seccion-productos">
-
-    <h2 class="titulo-slider">
-        <span>LOS FAVORITOS</span>
-    </h2>
-
-    <div class="productos-slider">
-        <div class="slider-track">
-
-            <!-- productos -->
-            <div class="producto">
-                <img src="../IMG-CRAYOLAS/C-BTS.jpeg">
-                <p>CRAYOLAS BTS</p>
-                <P>$25,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-KITS/K-PINTURAS.jpeg">
-                <p>PINTURAS</p>
-                <P>$50,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-ALMOHADAS/A-STITCH.jpeg">
-                <p>LILO & STITCH</p>
-                <p>$75,00 MXN</p>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-CRAYOLAS/C-K-POP.jpeg">
-                <p>GUERRERAS K-POP</p>
-                <P>$25,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-TATUAJES/TATUAJE.jpeg">
-                <p>PACK TATUAJES</p>
-                <p>$150,00 MXN</p>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-CRAYOLAS/C-PRINCESAS.jpeg">
-                <p>PRINCESAS</p>
-                <P>$25,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-ALMOHADAS/A-MELODY.jpeg">
-                <p>MELODY</p>
-                <p>$75,00 MXN</p>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-KITS/K-DINOSAURIOS.jpeg">
-                <p>DINOSAURIOS</p>
-                <p>$35,00 MXN</p>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-CRAYOLAS/C-F1.jpeg">
-                <p>F1</p>
-                <P>$25,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-ALMOHADAS/A-MOANA.jpeg">
-                <p>MOANA</p>
-                <p>$75,00 MXN</p>
-            </div>
-            <!--DUPLICADOS-->
-            <div class="producto">
-                <img src="../IMG-CRAYOLAS/C-BTS.jpeg">
-                <p>CRAYOLAS BTS</p>
-                <P>$25,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-KITS/K-PINTURAS.jpeg">
-                <p>PINTURAS</p>
-                <P>$50,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-ALMOHADAS/A-STITCH.jpeg">
-                <p>LILO & STITCH</p>
-                <p>$75,00 MXN</p>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-CRAYOLAS/C-K-POP.jpeg">
-                <p>GUERRERAS K-POP</p>
-                <P>$25,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-TATUAJES/TATUAJE.jpeg">
-                <p>PACK TATUAJES</p>
-                <p>$150,00 MXN</p>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-CRAYOLAS/C-PRINCESAS.jpeg">
-                <p>PRINCESAS</p>
-                <P>$25,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-ALMOHADAS/A-MELODY.jpeg">
-                <p>MELODY</p>
-                <p>$75,00 MXN</p>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-KITS/K-DINOSAURIOS.jpeg">
-                <p>DINOSAURIOS</p>
-                <p>$35,00 MXN</p>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-CRAYOLAS/C-F1.jpeg">
-                <p>F1</p>
-                <P>$25,00 MXN</P>
-            </div>
-
-            <div class="producto">
-                <img src="../IMG-ALMOHADAS/A-MOANA.jpeg">
-                <p>MOANA</p>
-                <p>$75,00 MXN</p>
-            </div>
-
-
-        </div>
+            </path>
+        </svg>
     </div>
 
-</section>
+    <!-- PRODUCTOS -->
+    <section class="seccion-productos">
 
-<!-- COLECCIONES -->
-<section class="seccion-colecciones">
+        <h2 class="titulo-slider">
+            <span>LOS FAVORITOS</span>
+        </h2>
 
-    <img src="../IMGA/fondo-tarjetas.jpeg" class="fondo-colecciones">
+        <div class="productos-slider">
+            <div class="slider-track">
 
-    <h2 class="titulo-colecciones">
-        <img src="../IMGA/imagen-colecciones2.jpeg" alt="">
-    </h2>
+                <!-- productos -->
+                <div class="producto">
+                    <img src="../IMG-CRAYOLAS/C-BTS.jpeg">
+                    <p>CRAYOLAS BTS</p>
+                    <P>$25,00 MXN</P>
+                </div>
 
-    <div class="slider-container">
+                <div class="producto">
+                    <img src="../IMG-KITS/K-PINTURAS.jpeg">
+                    <p>PINTURAS</p>
+                    <P>$50,00 MXN</P>
+                </div>
 
-        <div class="slider-box">
+                <div class="producto">
+                    <img src="../IMG-ALMOHADAS/A-STITCH.jpeg">
+                    <p>LILO & STITCH</p>
+                    <p>$75,00 MXN</p>
+                </div>
 
-            <img src="../IMG-CRAYOLAS/C-CHICASSUPER.jpeg" class="slide active">
-            <img src="../IMG-CRAYOLAS/C-BTS.jpeg" class="slide">
-            <img src="../IMG-CRAYOLAS/C-MERLINA.jpeg" class="slide">
+                <div class="producto">
+                    <img src="../IMG-CRAYOLAS/C-K-POP.jpeg">
+                    <p>GUERRERAS K-POP</p>
+                    <P>$25,00 MXN</P>
+                </div>
 
-            <div class="card-cover">
-                <img src="../IMGA/portada-crayolas.jpeg" class="cover-img">
+                <div class="producto">
+                    <img src="../IMG-TATUAJES/TATUAJE.jpeg">
+                    <p>PACK TATUAJES</p>
+                    <p>$150,00 MXN</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-CRAYOLAS/C-PRINCESAS.jpeg">
+                    <p>PRINCESAS</p>
+                    <P>$25,00 MXN</P>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-ALMOHADAS/A-MELODY.jpeg">
+                    <p>MELODY</p>
+                    <p>$75,00 MXN</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-KITS/K-DINOSAURIOS.jpeg">
+                    <p>DINOSAURIOS</p>
+                    <p>$35,00 MXN</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-CRAYOLAS/C-F1.jpeg">
+                    <p>F1</p>
+                    <P>$25,00 MXN</P>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-ALMOHADAS/A-MOANA.jpeg">
+                    <p>MOANA</p>
+                    <p>$75,00 MXN</p>
+                </div>
+                <!--DUPLICADOS-->
+                <div class="producto">
+                    <img src="../IMG-CRAYOLAS/C-BTS.jpeg">
+                    <p>CRAYOLAS BTS</p>
+                    <P>$25,00 MXN</P>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-KITS/K-PINTURAS.jpeg">
+                    <p>PINTURAS</p>
+                    <P>$50,00 MXN</P>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-ALMOHADAS/A-STITCH.jpeg">
+                    <p>LILO & STITCH</p>
+                    <p>$75,00 MXN</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-CRAYOLAS/C-K-POP.jpeg">
+                    <p>GUERRERAS K-POP</p>
+                    <P>$25,00 MXN</P>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-TATUAJES/TATUAJE.jpeg">
+                    <p>PACK TATUAJES</p>
+                    <p>$150,00 MXN</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-CRAYOLAS/C-PRINCESAS.jpeg">
+                    <p>PRINCESAS</p>
+                    <P>$25,00 MXN</P>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-ALMOHADAS/A-MELODY.jpeg">
+                    <p>MELODY</p>
+                    <p>$75,00 MXN</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-KITS/K-DINOSAURIOS.jpeg">
+                    <p>DINOSAURIOS</p>
+                    <p>$35,00 MXN</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-CRAYOLAS/C-F1.jpeg">
+                    <p>F1</p>
+                    <P>$25,00 MXN</P>
+                </div>
+
+                <div class="producto">
+                    <img src="../IMG-ALMOHADAS/A-MOANA.jpeg">
+                    <p>MOANA</p>
+                    <p>$75,00 MXN</p>
+                </div>
+
+
             </div>
         </div>
 
-        <div class="slider-box">
-            
-            <img src="../IMG-TATUAJES/TATUAJE.jpeg" class="slide">
-            <img src="../IMG-TATUAJES/T-DIBUJOS.jpeg" class="slide">
-            <img src="../IMG-TATUAJES/t-animales.jpeg" class="slide">
+    </section>
 
-            <div class="card-cover">
-                <img src="../IMGA/portada-tatuajes.jpeg" class="cover-img">
+    <!-- COLECCIONES -->
+    <section class="seccion-colecciones">
+
+        <img src="../IMGA/fondo-tarjetas.jpeg" class="fondo-colecciones">
+
+        <h2 class="titulo-colecciones">
+            <img src="../IMGA/imagen-colecciones2.jpeg" alt="">
+        </h2>
+
+        <div class="slider-container">
+
+            <div class="slider-box">
+
+                <img src="../IMG-CRAYOLAS/C-CHICASSUPER.jpeg" class="slide active">
+                <img src="../IMG-CRAYOLAS/C-BTS.jpeg" class="slide">
+                <img src="../IMG-CRAYOLAS/C-MERLINA.jpeg" class="slide">
+
+                <div class="card-cover">
+                    <img src="../IMGA/portada-crayolas.jpeg" class="cover-img">
+                </div>
             </div>
+
+            <div class="slider-box">
+
+                <img src="../IMG-TATUAJES/TATUAJE.jpeg" class="slide">
+                <img src="../IMG-TATUAJES/T-DIBUJOS.jpeg" class="slide">
+                <img src="../IMG-TATUAJES/t-animales.jpeg" class="slide">
+
+                <div class="card-cover">
+                    <img src="../IMGA/portada-tatuajes.jpeg" class="cover-img">
+                </div>
+            </div>
+
+            <div class="slider-box">
+
+                <img src="../IMG-ALMOHADAS/A-BISONTES.jpeg" class="slide">
+                <img src="../IMG-ALMOHADAS/A-SPIDERMAN.jpeg" class="slide">
+                <img src="../IMG-ALMOHADAS/A-STITCH.jpeg" class="slide">
+
+                <div class="card-cover">
+                    <img src="../IMGA/portada-peluches.jpeg" alt="cover-img">
+                </div>
+            </div>
+
+            <div class="slider-box">
+
+                <img src="../IMG-KITS/K-DINOSAURIOS.jpeg" class="slide">
+                <img src="../IMG-KITS/K-ESFERAS.jpeg" class="slide">
+                <img src="../IMG-KITS/K-OSOS.jpeg" class="slide">
+
+                <div class="card-cover">
+                    <img src="../IMGA/portada-kits.jpeg" alt="cover-img">
+                </div>
+            </div>
+
         </div>
 
-        <div class="slider-box">
-        
-            <img src="../IMG-ALMOHADAS/A-BISONTES.jpeg" class="slide">
-            <img src="../IMG-ALMOHADAS/A-SPIDERMAN.jpeg" class="slide">
-            <img src="../IMG-ALMOHADAS/A-STITCH.jpeg" class="slide">
+    </section>
 
-            <div class="card-cover">
-                <img src="../IMGA/portada-peluches.jpeg" alt="cover-img">
-            </div>
+    <!-- MARCA -->
+    <section class="seccion-sobre">
+
+        <div class="contenido-sobre">
+
+            <h2>CONOCE DE NUESTRA MARCA</h2>
+
+            <p>
+                En Dulcinea Pop creamos pequeños mundos llenos de color,
+                magia y creatividad. Cada producto está pensado para
+                convertir momentos especiales en recuerdos inolvidables.
+            </p>
+
         </div>
 
-        <div class="slider-box">
-        
-            <img src="../IMG-KITS/K-DINOSAURIOS.jpeg" class="slide">
-            <img src="../IMG-KITS/K-ESFERAS.jpeg" class="slide">
-            <img src="../IMG-KITS/K-OSOS.jpeg" class="slide">
+    </section>
 
-            <div class="card-cover">
-                <img src="../IMGA/portada-kits.jpeg" alt="cover-img">
+    <footer class="footer">
+        <div class="footer-contenido">
+            <!--MARCA-->
+            <div class="footer-col">
+                <h3>Dulcenea Pop</h3>
+                <p>Pequeños mundos llenos de color, magia y creatividad</p>
             </div>
+
+            <!--NAVEGACIÓN-->
+            <div class="footer-col">
+                <h4>EXPLORA</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Colecciones</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+            </div>
+
+            <!--CONTACTO-->
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>México</p>
+                <p>dulceneapop@gmail.com</p>
+            </div>
+
+            <!--REDES-->
+            <div class="footer-col">
+                <h4>Siguenos</h4>
+                <div class="redes">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Tiktok</a>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-
-</section>
-
-<!-- MARCA -->
-<section class="seccion-sobre">
-
-    <div class="contenido-sobre">
-
-        <h2>CONOCE DE NUESTRA MARCA</h2>
-
-        <p>
-            En Dulcinea Pop creamos pequeños mundos llenos de color,
-            magia y creatividad. Cada producto está pensado para 
-            convertir momentos especiales en recuerdos inolvidables.
-        </p>
-
-    </div>
-
-</section>
-
-<footer class="footer">
-    <div class="footer-contenido">
-        <!--MARCA-->
-        <div class="footer-col">
-            <h3>Dulcenea Pop</h3>
-            <p>Pequeños mundos llenos de color, magia y creatividad</p>
+        <div class="footer-bottom">
+            <p>@ 2026 Dulcenea Pop - Todos los derechos reservados</p>
         </div>
 
-        <!--NAVEGACIÓN-->
-       <div class="footer-col">
-            <h4>EXPLORA</h4>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Colecciones</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-            </ul>
-       </div>
+    </footer>
 
-       <!--CONTACTO-->
-       <div class="footer-col">
-            <h4>Contacto</h4>
-            <p>México</p>
-            <p>dulceneapop@gmail.com</p>
-       </div>
-
-       <!--REDES-->
-       <div class="footer-col">
-            <h4>Siguenos</h4>
-            <div class="redes">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Tiktok</a>
-            </div>
-       </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>@ 2026 Dulcenea Pop - Todos los derechos reservados</p>
-    </div>
-
-</footer>
-
-<script src="../JS/index.js"></script>
+    <script src="../JS/index.js"></script>
 
 </body>
+
 </html>

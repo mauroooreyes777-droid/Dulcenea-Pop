@@ -93,6 +93,23 @@ function agregarAlCarrito(boton) {
     actualizarContador();
 
     mostrarToast();
+
+    function mostrarToastFinal() {
+
+        const toast = document.getElementById("toast");
+
+        toast.textContent = "Espera la confirmación de tu pedido vía WhatsApp ✨";
+
+        toast.classList.add("show");
+
+        setTimeout(() => {
+
+            toast.classList.remove("show");
+
+            toast.textContent = "Producto agregado ✨";
+
+        }, 4000);
+    }
 }
 
 function actualizarContador() {
