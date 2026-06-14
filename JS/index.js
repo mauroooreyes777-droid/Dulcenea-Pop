@@ -29,3 +29,35 @@ document.querySelectorAll(".slider-box").forEach((slider) => {
   },3000);
   
 });
+
+/* ===================
+CONTADOR CARRITO
+=====================*/
+
+const contadorCarrito =
+document.getElementById(
+  "contador-carrito"
+);
+
+if(contadorCarrito){
+
+  let carrito = JSON.parse(
+
+    localStorage.getItem(
+      "carrito"
+    )
+
+  ) || [];
+
+  let total = 0;
+
+  carrito.forEach(Item => {
+
+    total += parseInt(
+      Item.cantidad || 1
+    );
+  });
+
+  contadorCarrito.textContent =
+  total;
+}

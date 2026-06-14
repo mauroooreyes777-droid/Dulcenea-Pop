@@ -2105,3 +2105,90 @@ BUSCADOR
     box-shadow:
         0 12px 25px rgba(255, 105, 180, .32);
 }
+
+/*MENU DESPLEGABLE*/
+
+.dropdown-menu{
+    position: absolute;
+
+    top: 120px;
+
+    left: 40px;
+
+    width: 300px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    display: none;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    z-index: 9999;
+
+    border: 4px solid #ffd5e8;
+
+    box-shadow: 
+    0 20px 45px rgba(255, 105, 180, 0.18);
+
+    animation: aparecer .25s ease;
+}
+
+.dropdown-menu.open{
+    display: flex;
+}
+
+.dropdown-menu a{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 25px;
+
+    text-decoration: none;
+
+    color: #5a2a5a;
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.dropdown-menu a:hover{
+    background: #fff4fa;
+
+    padding-left: 35px;
+
+    color: #ff4fa0;
+}
+
+.dropdown-menu a:not(:last-child){
+
+    border-bottom: 
+    2px dashed #ffe1ef;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity: 0;
+
+        transform: 
+        translateY(-10px);
+    }
+
+    to{
+        opacity: 1;
+
+        transform:
+        translateY(0);
+    }
+}
