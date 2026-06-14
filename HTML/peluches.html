@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/peluches.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>PELUCHES</title>
+</head>
+
+<body>
+
+    <!-- =========================================
+TOP BAR
+========================================= -->
+
+    <div class="top-bar">
+
+        <a href="../HTML/menu.html" class="btn-seguir">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            <span> Seguir comprando</span>
+
+        </a>
+
+        <a href="/carrito.html" class="btn-carrito-top">
+
+            <div class="cart-badge" id="contador-carrito">
+
+                0
+
+            </div>
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================================
+SECTION ALMOHADAS
+========================================= -->
+    <!-- =========================================
+BANNER ALMOHADAS POP
+========================================= -->
+
+    <div class="banner-almohadas">
+
+        <img src="../IMGA/logo-almohadas.png" alt="Almohadas Pop">
+
+    </div>
+
+    <section class="almohadas-section">
+
+        <!-- TITULO -->
+
+        <div class="titulo-almohadas">
+
+            <p>
+
+                Crea tu almohada única con el diseño que más te guste ✨
+
+            </p>
+
+        </div>
+
+
+
+        <!-- CARD -->
+
+        <div class="card-almohadas">
+
+
+            <!-- =========================================
+        IZQUIERDA
+        ========================================= -->
+
+            <div class="preview-column">
+
+
+                <!-- PREVIEW -->
+
+                <div class="preview-box">
+
+                    <img id="preview-img" src="../IMGA/logo-marca.jpeg">
+
+                </div>
+
+
+
+                <!-- UPLOAD -->
+
+                <div class="upload-box">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <h3>
+
+                        Sube tu diseño aquí
+
+                    </h3>
+
+                    <p>
+
+                        PNG, JPG o WEBP 💖
+
+                    </p>
+
+
+                    <input type="file" id="link-imagen" accept="image/*">
+
+
+                    <label for="link-imagen" class="label-upload">
+
+                        <i class="fa-solid fa-folder-open"></i>
+
+                        Elegir archivo
+
+                    </label>
+
+
+                    <small>
+
+                        Usa imágenes claras y de buena calidad ✨
+
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+        DERECHA
+        ========================================= -->
+
+            <div class="form-almohadas">
+
+
+                <h2 class="form-titulo">
+
+                    Almohadas ✨ Cualquier temática
+
+                </h2>
+
+
+                <!-- TAMAÑO -->
+
+                <label>
+
+                    1. Tamaño 🛍️
+
+                </label>
+
+
+                <div class="sizes-grid">
+
+                    <div class="size-card active">
+
+                        <h3>Pequeño</h3>
+
+                        <p>25 cm aprox</p>
+
+                        <span>$75.00 c/u</span>
+
+                    </div>
+
+
+                    <div class="size-card">
+
+                        <h3>Mediano</h3>
+
+                        <p>25-27 cm aprox</p>
+
+                        <span>$75.00 c/u</span>
+
+                    </div>
+
+
+                    <div class="size-card">
+
+                        <h3>Grande</h3>
+
+                        <p>30 cm aprox</p>
+
+                        <span>$90.00 c/u</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CANTIDAD -->
+
+                <label>
+
+                    2. Cantidad 🌸
+
+                </label>
+
+
+                <div class="cantidad-box">
+
+                    <button type="button" class="cantidad-btn" id="restar">
+
+                        −
+
+                    </button>
+
+                    <input type="number" id="cantidad" min="1" value="10">
+
+                    <button type="button" class="cantidad-btn" id="sumar">
+
+                        +
+
+                    </button>
+
+                </div>
+
+
+                <small class="pedido-minimo">
+
+                    💖 Pedido mínimo 10 piezas
+
+                </small>
+
+
+
+                <!-- NOTAS -->
+
+                <label>
+
+                    3. Notas adicionales ✏️
+
+                </label>
+
+
+                <textarea placeholder="Ej: colores especiales, temática, detalles..."></textarea>
+
+
+
+                <!-- INFO -->
+
+                <div class="info-box">
+
+                    <strong>
+
+                        💖 Incluye:
+
+                    </strong>
+
+                    <ul>
+
+                        <li>Etiqueta personalizada</li>
+
+                        <li>4 plumones incluidos</li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- BOTON -->
+
+                <button id="btn-almohadas">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    Agregar al carrito 💕
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+    FEATURES
+    ========================================= -->
+
+        <div class="features-almohadas">
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <div>
+
+                    <strong>Pedido mínimo</strong>
+
+                    <p>10 piezas</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-tag"></i>
+
+                <div>
+
+                    <strong>Menos de 10 pzs</strong>
+
+                    <p>$90 c/u</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-calendar"></i>
+
+                <div>
+
+                    <strong>Agenda con anticipación</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <div>
+
+                    <strong>Envíos disponibles</strong>
+
+                    <p>Todo México</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="../JS/peluches.js"></script>
+
+</body>
+
+</html>

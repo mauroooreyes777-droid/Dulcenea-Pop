@@ -1,81 +1,406 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Menú | Dulcenea Pop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menú | Dulcinea Pop</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/menu.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
-    <div class="header-menu">
-    
-        <!-- NAV -->
-        <div class="linea-rosa">
-            <nav class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="crear.html">CREAR</a>
-                <a href="menu.html">Menú</a>
-                <a href="promociones.html">Promociones</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-    
-        <div class="wave">
-            <div class="wave">
-                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                    <defs>
-                        <linearGradient id="gradienteOla" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="#ff7aa2"/>
-                            <stop offset="50%" stop-color="#ffb86c"/>
-                            <stop offset="100%" stop-color="#ffe066"/>
-                        </linearGradient>
-                    </defs>
-                
-                    <path fill="url(#gradienteOla)"
-                    d="M0,60 
-                       C200,120 400,0 600,60 
-                       C800,120 1000,0 1200,60 
-                       C1300,80 1400,50 1440,40 
-                       L1440,120 L0,120 Z">
-                    </path>
-                </svg>
-            </div>
-            
-        </div>
-    
 
-        <div class="titulo-menu-img">
-            <img src="../IMGA-MENU/titulo-menu.jpeg" alt="Menú Pop">
-        </div>
 
-        <!--AHORA LAS CARDS DENTRO DEL FONDO -->
-        <div class="menu-expand">
-    
-            <a href="crayolas.html" class="menu-card">
-                <img src="../IMGA/portada-crayolas.jpeg">
-                <span>Crayolas</span>
+    <!-- =========================================
+    NAVBAR
+    ========================================= -->
+
+    <section class="linea-rosa">
+
+        <nav class="nav-links">
+
+            <a href="../HTML/index.html">
+
+                Inicio
+
             </a>
-    
-            <a href="#" class="menu-card">
-                <img src="../IMGA/portada-tatuajes.jpeg">
-                <span>Tatuajes</span>
+
+            <a href="../HTML/menu.html">
+
+                Tienda
+
             </a>
-    
-            <a href="#" class="menu-card">
-                <img src="../IMGA/portada-peluches.jpeg">
-                <span>Peluches</span>
+
+            <a href="../HTML/promociones.html">
+
+                Promociones
+
             </a>
-    
-            <a href="#" class="menu-card">
-                <img src="../IMGA/portada-kits.jpeg">
-                <span>Kits</span>
+
+            <a href="../HTML/contacto.html">
+
+                Contacto
+
             </a>
-    
-        </div>
-    
+
+        </nav>
+
+    </section>
+
+
+
+    <!-- =========================================
+    DECORACIONES
+    ========================================= -->
+
+    <div class="menu-decoracion">
+
+        <span class="decoracion">
+
+            ✨
+
+        </span>
+
+        <span class="decoracion">
+
+            💖
+
+        </span>
+
+        <span class="decoracion">
+
+            ⭐
+
+        </span>
+
+        <span class="decoracion">
+
+            🌈
+
+        </span>
+
     </div>
 
-</section>
+
+
+    <!-- =========================================
+    SUBTITULO
+    ========================================= -->
+
+    <section class="subtitulo-menu">
+
+        <h2>
+
+            Explora nuestras colecciones ✨
+
+        </h2>
+
+        <p>
+
+            Diseños personalizados llenos de magia y color 💕
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+    MENU CARDS
+    ========================================= -->
+
+    <section class="menu-expand">
+
+
+
+        <!-- =========================================
+        CRAYOLAS
+        ========================================= -->
+
+        <div class="menu-card crayolas">
+
+            <img src="../IMGA/portada-crayolas.jpeg" alt="Crayolas">
+
+            <div class="card-content">
+
+                <h3>
+
+                    Crayolas 🖍️
+
+                </h3>
+
+                <p>
+
+                    Personaliza crayolas mágicas
+                    con tus personajes favoritos ✨
+
+                </p>
+
+                <a href="../HTML/crayolas.html" class="btn-card">
+
+                    Ver colección 💕
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+        TATUAJES
+        ========================================= -->
+
+        <div class="menu-card tatuajes">
+
+            <img src="../IMGA/portada-tatuajes.jpeg" alt="Tatuajes">
+
+            <div class="card-content">
+
+                <h3>
+
+                    Tatuajes 🌈
+
+                </h3>
+
+                <p>
+
+                    Diseños temporales kawaii
+                    totalmente personalizados ✨
+
+                </p>
+
+                <a href="../HTML/tatuajes.html" class="btn-card">
+
+                    Ver colección 💕
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+        ALMOHADAS
+        ========================================= -->
+
+        <div class="menu-card almohadas">
+
+            <img src="../IMGA/cara-almohadas.png" alt="Almohadas">
+
+            <div class="card-content">
+
+                <h3>
+
+                    Almohadas ☁️
+
+                </h3>
+
+                <p>
+
+                    Convierte cualquier diseño
+                    en una almohada adorable 💖
+
+                </p>
+
+                <a href="../HTML/peluches.html" class="btn-card">
+
+                    Ver colección 💕
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+        KITS
+        ========================================= -->
+
+        <div class="menu-card kits">
+
+            <img src="../IMGA/portada-kits.jpeg" alt="Kits">
+
+            <div class="card-content">
+
+                <h3>
+
+                    Kits 🎀
+
+                </h3>
+
+                <p>
+
+                    Combina productos especiales
+                    en paquetes llenos de magia ✨
+
+                </p>
+
+                <a href="../HTML/kits.html" class="btn-card">
+
+                    Ver colección 💕
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+    BENEFICIOS
+    ========================================= -->
+
+    <section class="beneficios-menu">
+
+
+
+        <!-- BENEFICIO -->
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <div>
+
+                <h4>
+
+                    Diseños únicos
+
+                </h4>
+
+                <p>
+
+                    Cada producto está pensado
+                    para verse adorable y especial ✨
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BENEFICIO -->
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-star"></i>
+
+            <div>
+
+                <h4>
+
+                    Calidad premium
+
+                </h4>
+
+                <p>
+
+                    Materiales bonitos y acabados
+                    hechos con muchísimo amor 💖
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BENEFICIO -->
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-gift"></i>
+
+            <div>
+
+                <h4>
+
+                    Regalos perfectos
+
+                </h4>
+
+                <p>
+
+                    Productos ideales para cumpleaños,
+                    fiestas y momentos especiales 🎀
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BENEFICIO -->
+
+        <div class="beneficio">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            <div>
+
+                <h4>
+
+                    Personalización
+
+                </h4>
+
+                <p>
+
+                    Puedes crear diseños
+                    totalmente personalizados 🌈
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+    FOOTER
+    ========================================= -->
+
+    <footer class="footer-pop">
+
+        <!-- Tu footer aquí -->
+
+    </footer>
+
+
 
 </body>
+
 </html>

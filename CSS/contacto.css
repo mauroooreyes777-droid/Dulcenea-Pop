@@ -1,0 +1,859 @@
+/* =========================================
+BODY
+========================================= */
+
+body {
+
+    font-family: 'Fredoka', sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow-x: hidden;
+
+    background-color: #fffdfd;
+
+    background-image:
+
+        radial-gradient(circle at 20% 20%,
+            rgba(255, 182, 193, .18),
+            transparent 30%),
+
+        radial-gradient(circle at 80% 0%,
+            rgba(199, 125, 255, .15),
+            transparent 35%);
+
+}
+
+
+
+/* =========================================
+TOP BAR
+========================================= */
+
+.top-bar {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 50px;
+
+    box-sizing: border-box;
+
+}
+
+
+.btn-seguir {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 28px;
+
+    background: white;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #ff4fa3;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .12);
+
+    transition: .3s ease;
+
+}
+
+.btn-seguir:hover {
+
+    transform: translateX(-5px);
+
+}
+
+
+.btn-seguir i {
+
+    font-size: 18px;
+
+}
+
+
+
+/* =========================================
+BANNER
+========================================= */
+
+.banner-contacto {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: -140px;
+
+    margin-bottom: -25px;
+
+}
+
+
+.banner-contacto img {
+
+    width: 100%;
+
+    max-width: 500px;
+
+}
+
+
+
+/* =========================================
+SUBTITULO
+========================================= */
+
+.subtitulo-contacto {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.subtitulo-contacto p {
+
+    font-size: 24px;
+
+    color: #555;
+
+}
+
+
+
+/* =========================================
+SECTION
+========================================= */
+
+.contacto-section {
+
+    width: 90%;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+
+    align-items: start;
+
+}
+
+
+
+/* =========================================
+COLUMNAS
+========================================= */
+
+.contacto-izquierda,
+.contacto-derecha {
+
+    background: rgba(255, 255, 255, .7);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 40px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 15px 35px rgba(255, 105, 180, .08);
+
+}
+
+
+
+/* =========================================
+HEADERS
+========================================= */
+
+.info-header h2,
+.mensaje-header h2 {
+
+    font-size: 38px;
+
+    color: #ff4fa3;
+
+    margin-bottom: 10px;
+
+}
+
+
+.info-header p,
+.mensaje-header p {
+
+    color: #777;
+
+    font-size: 18px;
+
+}
+
+
+
+/* =========================================
+CONTACTO CARD
+========================================= */
+
+.contacto-card {
+
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 22px;
+
+    margin-top: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    text-decoration: none;
+
+    position: relative;
+
+    transition: .3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(255, 105, 180, .06);
+
+}
+
+.contacto-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.icono-contacto {
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 32px;
+
+    color: white;
+
+    flex-shrink: 0;
+
+}
+
+
+.facebook .icono-contacto {
+
+    background: #1877f2;
+
+}
+
+
+.instagram .icono-contacto {
+
+    background:
+        linear-gradient(45deg,
+            #feda75,
+            #fa7e1e,
+            #d62976,
+            #962fbf,
+            #4f5bd5);
+
+}
+
+
+.correo .icono-contacto {
+
+    background: #c77dff;
+
+}
+
+
+.horario .icono-contacto {
+
+    background: #ffc300;
+
+}
+
+
+.texto-contacto {
+
+    flex: 1;
+
+}
+
+
+.texto-contacto h3 {
+
+    margin: 0;
+
+    color: #444;
+
+    font-size: 25px;
+
+}
+
+
+.texto-contacto span {
+
+    color: #777;
+
+    line-height: 1.5;
+
+}
+
+
+.badge-contacto {
+
+    background: #fff0f7;
+
+    padding: 10px 16px;
+
+    border-radius: 30px;
+
+    color: #ff4fa3;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.flecha {
+
+    color: #999;
+
+    margin-left: 10px;
+
+}
+
+
+
+/* =========================================
+EXTRA BOX
+========================================= */
+
+.extra-ayuda {
+
+    margin-top: 30px;
+
+    background:
+        linear-gradient(45deg,
+            #fff0f7,
+            #fff);
+
+    border: 2px dashed #ffb6d5;
+
+    border-radius: 30px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.extra-icono {
+
+    font-size: 45px;
+
+}
+
+
+.extra-texto {
+
+    flex: 1;
+
+}
+
+
+.extra-texto h3 {
+
+    margin: 0;
+
+    color: #444;
+
+    margin-bottom: 8px;
+
+}
+
+
+.extra-texto p {
+
+    margin: 0;
+
+    color: #666;
+
+}
+
+
+.estrella-extra {
+
+    font-size: 55px;
+
+}
+
+
+
+/* =========================================
+REDES
+========================================= */
+
+.redes-sociales {
+
+    margin-top: 35px;
+
+}
+
+
+.redes-sociales h3 {
+
+    color: #444;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.redes-sociales p {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+}
+
+
+.redes-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.red-social {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+
+    transition: .3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(255, 105, 180, .06);
+
+}
+
+.red-social:hover {
+
+    transform: translateY(-6px);
+
+}
+
+
+.red-social i {
+
+    font-size: 35px;
+
+    color: #ff4fa3;
+
+}
+
+
+.red-social span {
+
+    color: #555;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================================
+MENSAJE HEADER
+========================================= */
+
+.mensaje-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.icono-mensaje {
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 25px;
+
+    background: #ffe3f1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 38px;
+
+}
+
+
+
+/* =========================================
+FORM
+========================================= */
+
+.form-contacto {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+.grupo-input {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.grupo-input label {
+
+    font-weight: bold;
+
+    color: #444;
+
+    font-size: 18px;
+
+}
+
+
+.grupo-input input,
+.grupo-input select,
+.grupo-input textarea {
+
+    border: 2px solid #ffd6ec;
+
+    border-radius: 22px;
+
+    padding: 18px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: .3s ease;
+
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+
+.grupo-input input:focus,
+.grupo-input select:focus,
+.grupo-input textarea:focus {
+
+    border-color: #ff69b4;
+
+    box-shadow:
+        0 0 0 4px rgba(255, 105, 180, .1);
+
+}
+
+
+.grupo-input textarea {
+
+    resize: none;
+
+    height: 180px;
+
+}
+
+
+
+/* =========================================
+BTN WHATSAPP
+========================================= */
+
+.btn-whatsapp {
+
+    border: none;
+
+    padding: 22px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(45deg,
+            #ff69b4,
+            #ff4fa3);
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+
+    transition: .3s ease;
+
+    box-shadow:
+        0 12px 25px rgba(255, 105, 180, .2);
+
+}
+
+.btn-whatsapp:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.btn-whatsapp i {
+
+    font-size: 26px;
+
+}
+
+
+
+/* =========================================
+SEGURIDAD
+========================================= */
+
+.texto-seguridad {
+
+    text-align: center;
+
+    color: #888;
+
+    font-size: 14px;
+
+}
+
+
+
+/* =========================================
+BENEFICIOS
+========================================= */
+
+.beneficios-contacto {
+
+    width: 90%;
+
+    margin: 60px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.beneficio-box {
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 28px;
+
+    display: flex;
+
+    gap: 18px;
+
+    align-items: flex-start;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .08);
+
+}
+
+
+.beneficio-box i {
+
+    font-size: 38px;
+
+    color: #ff4fa3;
+
+}
+
+
+.beneficio-box h3 {
+
+    margin: 0;
+
+    color: #444;
+
+    margin-bottom: 8px;
+
+}
+
+
+.beneficio-box p {
+
+    margin: 0;
+
+    color: #777;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* =========================================
+RESPONSIVE
+========================================= */
+
+@media(max-width:1200px) {
+
+    .contacto-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .beneficios-contacto {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .top-bar {
+
+        padding: 20px;
+
+    }
+
+    .contacto-section {
+
+        width: 95%;
+
+    }
+
+    .redes-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .beneficios-contacto {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .mensaje-header {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .contacto-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .badge-contacto {
+
+        margin-top: 10px;
+
+    }
+
+}

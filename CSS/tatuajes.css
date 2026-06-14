@@ -1,0 +1,775 @@
+/* =========================
+RESET
+========================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+BODY
+========================= */
+
+body {
+
+    font-family: 'Fredoka', sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow-x: hidden;
+
+    background-color: hsla(0, 0%, 100%, 1);
+
+    background-image:
+
+        radial-gradient(circle at 32% 16%,
+            hsla(14, 100%, 64%, 0.33) 17.64%,
+            transparent 61.51%),
+
+        radial-gradient(circle at 75% 1%,
+            hsla(247, 100%, 63%, 0.3) 11.26%,
+            transparent 63.69%);
+
+    background-blend-mode: multiply, multiply;
+
+}
+
+
+/* =========================
+TOP BAR
+========================= */
+
+.top-actions {
+
+    width: 100%;
+
+    padding: 30px 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* =========================
+BOTON VOLVER
+========================= */
+
+.btn-explorar {
+
+    padding: 18px 35px;
+
+    border-radius: 22px;
+
+    background:
+
+        linear-gradient(90deg,
+            #ff6bb5,
+            #ff8fc9);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 1.2rem;
+
+    box-shadow:
+        0 12px 25px rgba(255, 105, 180, .15);
+
+    transition: .3s;
+}
+
+
+.btn-explorar:hover {
+
+    transform:
+        translateY(-4px);
+}
+
+
+/* =========================
+CARRITO
+========================= */
+
+.cart-btn {
+
+    position: relative;
+
+    text-decoration: none;
+}
+
+
+.cart-btn i {
+
+    font-size: 3rem;
+
+    color: #ff5da8;
+}
+
+
+.cart-badge {
+
+    position: absolute;
+
+    top: -10px;
+
+    right: -12px;
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #ff4fa0;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 800;
+}
+
+
+/* =========================
+LOGO
+========================= */
+
+.banner-tatuajes {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 70px;
+
+    margin-bottom: 20px;
+}
+
+
+.banner-tatuajes img {
+
+    width: 550px;
+
+    max-width: 90%;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+TITULO
+========================= */
+
+.titulo-tatuajes {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.titulo-tatuajes h1 {
+
+    font-size: 4rem;
+
+    color: #ff5db1;
+
+    font-weight: 900;
+
+    margin-bottom: 15px;
+}
+
+
+.titulo-tatuajes p {
+
+    font-size: 1.3rem;
+
+    color: #666;
+}
+
+
+/* =========================
+CARD PRINCIPAL
+========================= */
+
+.card-tatuajes {
+
+    width: 92%;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 40px;
+
+    padding: 35px;
+
+    display: flex;
+
+    gap: 35px;
+
+    box-shadow:
+        0 20px 45px rgba(255, 105, 180, .08);
+}
+
+
+/* =========================
+COLUMNA IZQUIERDA
+========================= */
+
+.preview-column {
+
+    width: 48%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =========================
+PREVIEW
+========================= */
+
+.preview-box {
+
+    width: 100%;
+    height: 420px;
+
+    background: #fff7fb;
+
+    border: 3px dashed #ffb6d9;
+
+    border-radius: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+
+}
+
+.preview-box {
+
+    background:
+        radial-gradient(circle at top left, #ffe0f0, #fff7fb);
+}
+
+
+.preview-box img {
+
+    max-width: 90%;
+
+    max-height: 90%;
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: 20px;
+
+    transition: .3s ease;
+
+}
+
+
+.preview-box h3 {
+
+    color: #ff5da8;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+}
+
+
+.preview-box p {
+
+    color: #777;
+}
+
+
+/* =========================
+UPLOAD
+========================= */
+
+.upload-box {
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    border: 3px dashed #ffd0e8;
+
+    background: #fff8fc;
+
+    padding: 35px;
+
+    text-align: center;
+}
+
+
+.upload-box i {
+
+    font-size: 4rem;
+
+    color: #ff6bb5;
+
+    margin-bottom: 20px;
+}
+
+
+.upload-box h3 {
+
+    color: #ff5db1;
+
+    font-size: 2rem;
+
+    margin-bottom: 12px;
+}
+
+
+.upload-box p {
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+
+.upload-box input {
+
+    display: none;
+}
+
+
+/* BOTON */
+
+.label-upload {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 16px 35px;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(90deg,
+            #ff5db1,
+            #ff7fc3);
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+.label-upload:hover {
+
+    transform:
+        translateY(-4px);
+}
+
+
+/* =========================
+FORM
+========================= */
+
+.form-tatuajes {
+
+    width: 52%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* TITULO */
+
+.form-titulo {
+
+    color: #ff5db1;
+
+    font-size: 2.3rem;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+
+/* LABELS */
+
+.form-tatuajes label {
+
+    color: #555;
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+}
+
+
+/* INPUTS */
+
+.form-tatuajes select,
+.form-tatuajes textarea {
+
+    width: 100%;
+
+    padding: 18px 20px;
+
+    border-radius: 18px;
+
+    border: 2px solid #ffd2e8;
+
+    background: #fffdfd;
+
+    outline: none;
+
+    font-size: 1rem;
+}
+
+
+.form-tatuajes textarea {
+
+    min-height: 130px;
+
+    resize: none;
+}
+
+
+/* =========================
+CANTIDAD
+========================= */
+
+.cantidad-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 10px;
+
+}
+
+.cantidad-btn {
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #ff69b4;
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow: 0 5px 15px rgba(255, 105, 180, .25);
+
+}
+
+.cantidad-btn:hover {
+
+    transform: scale(1.08);
+
+    background: #ff4fa3;
+
+}
+
+#cantidad {
+
+    width: 100px;
+
+    height: 50px;
+
+    border: 2px solid #ffcce5;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #ff4fa3;
+
+    background: white;
+
+}
+
+#cantidad::-webkit-inner-spin-button,
+#cantidad::-webkit-outer-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+/* =========================
+INFO BOX
+========================= */
+
+.info-box {
+
+    background: #fff9e9;
+
+    border: 2px solid #ffe08b;
+
+    border-radius: 22px;
+
+    padding: 22px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.info-box img {
+
+    width: 90px;
+}
+
+
+.info-box strong {
+
+    color: #ffb300;
+}
+
+
+/* =========================
+BOTON FINAL
+========================= */
+
+#btn-tatuajes {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 22px;
+
+    border-radius: 22px;
+
+    background:
+
+        linear-gradient(90deg,
+            #ff4fa0,
+            #ff75bb);
+
+    color: white;
+
+    font-size: 1.3rem;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: .3s;
+}
+
+
+#btn-tatuajes:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 18px 35px rgba(255, 105, 180, .20);
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width: 980px) {
+
+    .card-tatuajes {
+
+        flex-direction: column;
+    }
+
+    .preview-column,
+    .form-tatuajes {
+
+        width: 100%;
+    }
+
+    .titulo-tatuajes h1 {
+
+        font-size: 3rem;
+    }
+}
+
+.top-bar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 40px;
+
+}
+
+.btn-seguir {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    background: #ffd6ec;
+
+    color: #ff4fa3;
+
+    padding: 12px 20px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+.btn-seguir:hover {
+
+    transform: translateX(-5px);
+
+}
+
+.btn-carrito-top {
+
+    position: relative;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+
+    transition: .3s;
+
+}
+
+.btn-carrito-top i {
+
+    font-size: 24px;
+
+    color: #ff4fa3;
+
+}
+
+.btn-carrito-top:hover {
+
+    transform: scale(1.08);
+
+}
+
+.cart-badge {
+
+    position: absolute;
+
+    top: -5px;
+
+    right: -5px;
+
+    width: 24px;
+
+    height: 24px;
+
+    border-radius: 50%;
+
+    background: #ff4fa3;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}

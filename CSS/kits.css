@@ -1,0 +1,847 @@
+/* =========================================
+BODY
+========================================= */
+
+body {
+
+    font-family: 'Fredoka', sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow-x: hidden;
+
+    background-color: hsla(0, 0%, 100%, 1);
+
+    background-image:
+
+        radial-gradient(circle at 32% 16%,
+            hsla(14, 100%, 64%, 0.18) 17.64%,
+            transparent 61.51%),
+
+        radial-gradient(circle at 75% 1%,
+            hsla(247, 100%, 63%, 0.18) 11.26%,
+            transparent 63.69%);
+
+    background-blend-mode: multiply, multiply;
+
+}
+
+
+
+/* =========================================
+TOP BAR
+========================================= */
+
+.top-bar {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 50px;
+
+    box-sizing: border-box;
+
+}
+
+
+.btn-seguir {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 28px;
+
+    background: white;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #ff4fa3;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .12);
+
+    transition: .3s ease;
+
+}
+
+.btn-seguir:hover {
+
+    transform: translateX(-5px);
+
+}
+
+
+.btn-seguir i {
+
+    font-size: 18px;
+
+}
+
+
+.btn-carrito-top {
+
+    position: relative;
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .12);
+
+    transition: .3s ease;
+
+}
+
+.btn-carrito-top:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+.btn-carrito-top i {
+
+    font-size: 28px;
+
+    color: #ff4fa3;
+
+}
+
+
+.cart-badge {
+
+    position: absolute;
+
+    top: 2px;
+
+    right: 2px;
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #ff4fa3;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================================
+BANNER
+========================================= */
+
+.banner-kits {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: -60px;
+
+    margin-bottom: -40px;
+
+}
+
+
+.banner-kits img {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    object-fit: contain;
+
+}
+
+
+
+/* =========================================
+SUBTITULO
+========================================= */
+
+.subtitulo-kits {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.subtitulo-kits p {
+
+    font-size: 26px;
+
+    color: #555;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+
+}
+
+
+.subtitulo-kits span {
+
+    color: #888;
+
+    font-size: 18px;
+
+}
+
+
+
+/* =========================================
+CATEGORIAS
+========================================= */
+
+.categorias-kits {
+
+    width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-bottom: 50px;
+
+}
+
+
+.categoria-kit {
+
+    border: none;
+
+    background: white;
+
+    width: 140px;
+
+    height: 120px;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .08);
+
+    transition: .3s ease;
+
+}
+
+
+.categoria-kit:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.categoria-kit.active {
+
+    border: 3px solid #ff69b4;
+
+}
+
+
+.categoria-kit i {
+
+    font-size: 35px;
+
+    color: #ff4fa3;
+
+}
+
+
+.categoria-kit span {
+
+    font-weight: bold;
+
+    color: #555;
+
+}
+
+
+
+/* =========================================
+SECTION
+========================================= */
+
+.kits-section {
+
+    width: 90%;
+
+    margin: auto;
+
+}
+
+
+.titulo-section {
+
+    font-size: 45px;
+
+    color: #ff4fa3;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* =========================================
+GRID
+========================================= */
+
+.kits-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+/* =========================================
+CARD
+========================================= */
+
+.kit-card {
+
+    background: white;
+
+    border-radius: 35px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow:
+        0 15px 35px rgba(255, 105, 180, .08);
+
+    transition: .3s ease;
+
+}
+
+.kit-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.kit-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    background: #ffd6ec;
+
+    border-radius: 50%;
+
+    top: -120px;
+
+    right: -120px;
+
+    opacity: .3;
+
+}
+
+
+
+/* =========================================
+BADGE
+========================================= */
+
+.badge-kit {
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 18px;
+
+    background: #ff4fa3;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    z-index: 3;
+
+}
+
+
+
+/* =========================================
+FAVORITO
+========================================= */
+
+.favorito-btn {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: 18px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, .08);
+
+}
+
+
+.favorito-btn i {
+
+    color: #ff4fa3;
+
+    font-size: 18px;
+
+}
+
+
+
+/* =========================================
+IMG
+========================================= */
+
+.kit-img {
+
+    width: 100%;
+
+    height: 260px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #fff7fb;
+
+}
+
+
+.kit-img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+/* =========================================
+INFO
+========================================= */
+
+.kit-info {
+
+    padding: 25px;
+
+}
+
+
+.kit-info h3 {
+
+    font-size: 28px;
+
+    color: #444;
+
+    margin-bottom: 10px;
+
+}
+
+
+.kit-info p {
+
+    color: #777;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+}
+
+
+.precio-kit {
+
+    font-size: 30px;
+
+    color: #ff4fa3;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* =========================================
+BTN KIT
+========================================= */
+
+.btn-kit {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 18px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(45deg,
+            #ff69b4,
+            #ff4fa3);
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+.btn-kit:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+
+/* =========================================
+BENEFICIOS
+========================================= */
+
+.beneficios-kits {
+
+    width: 90%;
+
+    margin: 60px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.beneficio-card {
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 30px;
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: flex-start;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .08);
+
+}
+
+
+.beneficio-card i {
+
+    font-size: 35px;
+
+    color: #ff4fa3;
+
+}
+
+
+.beneficio-card strong {
+
+    color: #ff4fa3;
+
+    font-size: 20px;
+
+}
+
+
+.beneficio-card p {
+
+    color: #777;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* =========================================
+CTA
+========================================= */
+
+.cta-kit {
+
+    width: 90%;
+
+    margin: 50px auto;
+
+    background:
+        linear-gradient(45deg,
+            #ffe0f0,
+            #fff);
+
+    border-radius: 40px;
+
+    padding: 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.cta-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.cta-info i {
+
+    font-size: 60px;
+
+    color: #ff4fa3;
+
+}
+
+
+.cta-info h3 {
+
+    font-size: 35px;
+
+    color: #444;
+
+    margin-bottom: 10px;
+
+}
+
+
+.cta-info p {
+
+    color: #777;
+
+}
+
+
+.btn-crear-kit {
+
+    border: none;
+
+    padding: 22px 35px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(45deg,
+            #c77dff,
+            #ff69b4);
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    box-shadow:
+        0 10px 25px rgba(199, 125, 255, .2);
+
+}
+
+.btn-crear-kit:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+
+/* =========================================
+RESPONSIVE
+========================================= */
+
+@media(max-width:1200px) {
+
+    .kits-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .beneficios-kits {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .top-bar {
+
+        padding: 20px;
+
+    }
+
+    .kits-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .beneficios-kits {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cta-kit {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .cta-info {
+
+        flex-direction: column;
+
+    }
+
+    .titulo-section {
+
+        font-size: 35px;
+
+    }
+
+}

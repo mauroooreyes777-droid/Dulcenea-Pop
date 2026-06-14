@@ -1,0 +1,1027 @@
+/* =========================================
+FUENTE + BODY
+========================================= */
+
+body {
+
+    font-family: 'Fredoka', sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow-x: hidden;
+
+    background-color: hsla(0, 0%, 100%, 1);
+
+    background-image:
+
+        radial-gradient(circle at 32% 16%,
+            hsla(14, 100%, 64%, 0.33) 17.64%,
+            transparent 61.51%),
+
+        radial-gradient(circle at 75% 1%,
+            hsla(247, 100%, 63%, 0.3) 11.26%,
+            transparent 63.69%);
+
+    background-blend-mode: multiply, multiply;
+
+}
+
+
+
+/* =========================================
+SECTION
+========================================= */
+
+.almohadas-section {
+
+    width: 100%;
+
+    padding: 40px 5%;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* =========================================
+TOP BAR
+========================================= */
+
+.top-bar {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 50px;
+
+    box-sizing: border-box;
+
+}
+
+
+.btn-seguir {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 16px 28px;
+
+    background: white;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #ff4fa3;
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+    box-shadow:
+        0 8px 20px rgba(255, 105, 180, .12);
+
+    transition: .3s ease;
+
+}
+
+.btn-seguir:hover {
+
+    transform: translateX(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .2);
+
+}
+
+
+
+/* =========================================
+CARRITO
+========================================= */
+
+.btn-carrito-top {
+
+    position: relative;
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .12);
+
+    transition: .3s ease;
+
+    flex-shrink: 0;
+
+}
+
+.btn-carrito-top:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+.btn-carrito-top i {
+
+    font-size: 30px;
+
+    color: #ff4fa3;
+
+}
+
+
+.cart-badge {
+
+    position: absolute;
+
+    top: 2px;
+
+    right: 2px;
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #ff4fa3;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================================
+TITULO
+========================================= */
+
+.titulo-almohadas {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.titulo-almohadas h1 {
+
+    font-size: 65px;
+
+    color: #ff4fa3;
+
+    margin-bottom: 10px;
+
+    line-height: 1.1;
+
+}
+
+
+.titulo-almohadas p {
+
+    color: #777;
+
+    font-size: 20px;
+
+}
+
+
+
+/* =========================================
+CARD GENERAL
+========================================= */
+
+.card-almohadas {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+
+    background: white;
+
+    border-radius: 45px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 15px 40px rgba(255, 105, 180, .08);
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-top: -120px;
+
+}
+
+
+/* glow decorativo */
+
+.card-almohadas::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    background: #ffd6ec;
+
+    border-radius: 50%;
+
+    top: -120px;
+
+    right: -120px;
+
+    opacity: .35;
+
+}
+
+
+
+/* =========================================
+PREVIEW COLUMN
+========================================= */
+
+.preview-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/* =========================================
+PREVIEW
+========================================= */
+
+.preview-box {
+
+    width: 100%;
+
+    height: 450px;
+
+    background:
+        linear-gradient(180deg,
+            #fff7fb,
+            #fff);
+
+    border: 3px dashed #ffb6d9;
+
+    border-radius: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+.preview-box::before {
+
+    content: "✨";
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 25px;
+
+    font-size: 30px;
+
+    opacity: .6;
+
+}
+
+
+.preview-box img {
+
+    max-width: 85%;
+
+    max-height: 85%;
+
+    object-fit: contain;
+
+    transition: .3s ease;
+
+    filter:
+        drop-shadow(0 10px 20px rgba(0, 0, 0, .08));
+
+}
+
+
+
+/* =========================================
+UPLOAD BOX
+========================================= */
+
+.upload-box {
+
+    background:
+        linear-gradient(180deg,
+            #fff8fc,
+            #fff);
+
+    border: 2px solid #ffd6ec;
+
+    border-radius: 35px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+
+.upload-box i {
+
+    font-size: 60px;
+
+    color: #ff69b4;
+
+    margin-bottom: 20px;
+
+}
+
+
+.upload-box h3 {
+
+    font-size: 38px;
+
+    color: #ff4fa3;
+
+    margin-bottom: 10px;
+
+}
+
+
+.upload-box p {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+    font-size: 17px;
+
+}
+
+
+.upload-box input {
+
+    display: none;
+
+}
+
+
+.label-upload {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px 34px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(45deg,
+            #ff69b4,
+            #ff4fa3);
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, .25);
+
+    transition: .3s ease;
+
+}
+
+.label-upload:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.upload-box small {
+
+    display: block;
+
+    margin-top: 20px;
+
+    color: #888;
+
+}
+
+
+
+/* =========================================
+FORM
+========================================= */
+
+.form-almohadas {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.form-titulo {
+
+    font-size: 50px;
+
+    color: #ff4fa3;
+
+    line-height: 1.1;
+
+}
+
+
+.form-almohadas label {
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: #444;
+
+}
+
+
+
+/* =========================================
+SIZE CARDS
+========================================= */
+
+.sizes-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.size-card {
+
+    background: white;
+
+    border: 2px solid #ffd6ec;
+
+    border-radius: 28px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    position: relative;
+
+}
+
+.size-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #ff69b4;
+
+    box-shadow:
+        0 10px 20px rgba(255, 105, 180, .12);
+
+}
+
+
+.size-card.active {
+
+    border: 3px solid #ff4fa3;
+
+    background: #fff7fb;
+
+}
+
+
+.size-card h3 {
+
+    color: #444;
+
+    margin-bottom: 10px;
+
+    font-size: 24px;
+
+}
+
+
+.size-card p {
+
+    color: #888;
+
+    margin-bottom: 12px;
+
+}
+
+
+.size-card span {
+
+    color: #ff4fa3;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================================
+CANTIDAD
+========================================= */
+
+.cantidad-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.cantidad-btn {
+
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(45deg,
+            #ff69b4,
+            #ff4fa3);
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(255, 105, 180, .2);
+
+}
+
+.cantidad-btn:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+#cantidad {
+
+    flex: 1;
+
+    height: 60px;
+
+    border: 2px solid #ffd6ec;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #ff4fa3;
+
+    background: white;
+
+}
+
+
+#cantidad::-webkit-inner-spin-button,
+#cantidad::-webkit-outer-spin-button {
+
+    -webkit-appearance: none;
+
+}
+
+
+.pedido-minimo {
+
+    color: #ff4fa3;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+}
+
+
+
+/* =========================================
+TEXTAREA
+========================================= */
+
+textarea {
+
+    width: 100%;
+
+    min-height: 180px;
+
+    border: 2px solid #ffd6ec;
+
+    border-radius: 28px;
+
+    padding: 22px;
+
+    font-size: 16px;
+
+    resize: none;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition: .3s ease;
+
+}
+
+textarea:focus {
+
+    border-color: #ff69b4;
+
+    box-shadow:
+        0 0 0 5px rgba(255, 105, 180, .1);
+
+}
+
+
+
+/* =========================================
+INFO BOX
+========================================= */
+
+.info-box {
+
+    background:
+        linear-gradient(180deg,
+            #fff9eb,
+            #fffef8);
+
+    border: 2px solid #ffe08a;
+
+    border-radius: 30px;
+
+    padding: 28px;
+
+}
+
+
+.info-box strong {
+
+    color: #ff9f1c;
+
+    font-size: 20px;
+
+}
+
+
+.info-box ul {
+
+    margin-top: 18px;
+
+    padding-left: 22px;
+
+}
+
+
+.info-box li {
+
+    margin-bottom: 12px;
+
+    color: #666;
+
+}
+
+
+
+/* =========================================
+BOTON
+========================================= */
+
+#btn-almohadas {
+
+    width: 100%;
+
+    padding: 24px;
+
+    border: none;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(45deg,
+            #ff69b4,
+            #ff4fa3);
+
+    color: white;
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    box-shadow:
+        0 15px 30px rgba(255, 105, 180, .25);
+
+}
+
+#btn-almohadas:hover {
+
+    transform: translateY(-6px);
+
+}
+
+
+
+/* =========================================
+FEATURES
+========================================= */
+
+.features-almohadas {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+
+    margin-top: 40px;
+
+}
+
+
+.feature-card {
+
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 10px 20px rgba(255, 105, 180, .06);
+
+    transition: .3s ease;
+
+}
+
+.feature-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.feature-card i {
+
+    font-size: 30px;
+
+    color: #ff69b4;
+
+}
+
+
+.feature-card strong {
+
+    color: #ff4fa3;
+
+    font-size: 18px;
+
+}
+
+
+.feature-card p {
+
+    color: #888;
+
+    margin-top: 5px;
+
+}
+
+
+
+/* =========================================
+RESPONSIVE
+========================================= */
+@media(max-width:768px) {
+
+    .top-bar {
+
+        padding: 20px;
+
+    }
+
+    .btn-seguir {
+
+        font-size: 15px;
+
+        padding: 14px 20px;
+
+    }
+
+    .btn-carrito-top {
+
+        width: 65px;
+
+        height: 65px;
+
+    }
+
+}
+
+@media(max-width:1100px) {
+
+    .card-almohadas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .sizes-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .features-almohadas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .titulo-almohadas h1 {
+
+        font-size: 45px;
+
+    }
+
+}
+
+
+@media(max-width:700px) {
+
+    .almohadas-section {
+
+        padding: 20px;
+
+    }
+
+    .card-almohadas {
+
+        padding: 25px;
+
+    }
+
+    .preview-box {
+
+        height: 320px;
+
+    }
+
+    .form-titulo {
+
+        font-size: 38px;
+
+    }
+
+}
+
+/* =========================================
+BANNER ALMOHADAS
+========================================= */
+
+.banner-almohadas {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: -80px;
+    margin-bottom: 20px;
+
+}
+
+
+.banner-almohadas img {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    object-fit: contain;
+
+    display: block;
+
+    transform: translateY(-50px);
+
+}
