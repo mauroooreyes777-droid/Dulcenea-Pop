@@ -2108,7 +2108,7 @@ BUSCADOR
 
 /*MENU DESPLEGABLE*/
 
-.dropdown-menu{
+.dropdown-menu {
     position: absolute;
 
     top: 120px;
@@ -2131,17 +2131,17 @@ BUSCADOR
 
     border: 4px solid #ffd5e8;
 
-    box-shadow: 
-    0 20px 45px rgba(255, 105, 180, 0.18);
+    box-shadow:
+        0 20px 45px rgba(255, 105, 180, 0.18);
 
     animation: aparecer .25s ease;
 }
 
-.dropdown-menu.open{
+.dropdown-menu.open {
     display: flex;
 }
 
-.dropdown-menu a{
+.dropdown-menu a {
 
     display: flex;
 
@@ -2162,7 +2162,7 @@ BUSCADOR
     transition: .3s;
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
     background: #fff4fa;
 
     padding-left: 35px;
@@ -2170,25 +2170,48 @@ BUSCADOR
     color: #ff4fa0;
 }
 
-.dropdown-menu a:not(:last-child){
+.dropdown-menu::before {
 
-    border-bottom: 
-    2px dashed #ffe1ef;
+    content: "✨ Explora ✨";
+
+    text-align: center;
+
+    padding: 18px;
+
+    font-size: 1.2rem;
+
+    font-weight: 800;
+
+    color: #ff5db1;
+
+    background:
+        linear-gradient(90deg,
+            #fff0f7,
+            #fff9d6);
+
+    border-bottom:
+        3px dashed #ffd8ea;
 }
 
-@keyframes aparecer{
+.dropdown-menu a:not(:last-child) {
 
-    from{
+    border-bottom:
+        2px dashed #ffe1ef;
+}
+
+@keyframes aparecer {
+
+    from {
         opacity: 0;
 
-        transform: 
-        translateY(-10px);
+        transform:
+            translateY(-10px);
     }
 
-    to{
+    to {
         opacity: 1;
 
         transform:
-        translateY(0);
+            translateY(0);
     }
 }
